@@ -1,0 +1,1 @@
+export const NOTIFY_DISMISS_TIMEOUT = 5000;

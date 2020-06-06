@@ -1,0 +1,163 @@
+[
+  {
+    "templateName": "component",
+    "prompts": [
+      {
+        "type": "input",
+        "name": "name",
+        "message": "What is your component name?"
+      },
+      {
+        "type": "input",
+        "name": "description",
+        "message": "Please give your component a description."
+      },
+      {
+        "type": "list",
+        "name": "path",
+        "choices": ["basic", "common", "system"],
+        "message": "Where you would like to add the component (common)?",
+        "default": "common"
+      }
+    ],
+    "actions": [
+      {
+        "type": "add",
+        "path": "src/components/{{path}}/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        "templateFile": "plop-templates/component/Component.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/{{path}}/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
+        "templateFile": "plop-templates/component/Component.test.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/{{path}}/{{pascalCase name}}/{{kebabCase name}}.scss",
+        "templateFile": "plop-templates/component/Component.scss.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/{{path}}/{{pascalCase name}}/index.ts",
+        "templateFile": "plop-templates/component/index.js.hbs"
+      }
+    ]
+  },
+  {
+    "templateName": "layout",
+    "prompts": [
+      {
+        "type": "input",
+        "name": "name",
+        "message": "What is your layout name?"
+      },
+      {
+        "type": "input",
+        "name": "description",
+        "message": "Please give your layout a description."
+      }
+    ],
+    "actions": [
+      {
+        "type": "add",
+        "path": "src/components/layouts/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        "templateFile": "plop-templates/layout/Layout.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/layouts/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
+        "templateFile": "plop-templates/layout/Layout.test.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/layouts/{{pascalCase name}}/{{kebabCase name}}.scss",
+        "templateFile": "plop-templates/layout/Layout.scss.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/layouts/{{pascalCase name}}/default.ts",
+        "templateFile": "plop-templates/layout/default.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/layouts/{{pascalCase name}}/index.ts",
+        "templateFile": "plop-templates/layout/index.js.hbs"
+      }
+    ]
+  },
+  {
+    "templateName": "page",
+    "prompts": [
+      {
+        "type": "input",
+        "name": "name",
+        "message": "What is your page name?"
+      },
+      {
+        "type": "input",
+        "name": "description",
+        "message": "Please give your page a description."
+      },
+      {
+        "type": "list",
+        "name": "layout",
+        "choices": ["BasicLayout"],
+        "message": "Please select a layout for your page"
+      }
+    ],
+    "actions": [
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/{{pascalCase name}}.tsx",
+        "templateFile": "plop-templates/page/Page.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/{{pascalCase name}}.test.tsx",
+        "templateFile": "plop-templates/page/Page.test.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/{{kebabCase name}}.scss",
+        "templateFile": "plop-templates/page/Page.scss.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/default.ts",
+        "templateFile": "plop-templates/page/default.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/route.tsx",
+        "templateFile": "plop-templates/page/route.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "src/components/pages/{{pascalCase name}}/index.ts",
+        "templateFile": "plop-templates/page/index.js.hbs"
+      }
+    ]
+  },
+  {
+    "templateName": "plop-template",
+    "prompts": [
+      {
+        "type": "input",
+        "name": "name",
+        "message": "What is your template name?"
+      }
+    ],
+    "actions": [
+      {
+        "type": "add",
+        "path": "plop-templates/{{kebabCase name}}/config.js",
+        "templateFile": "plop-templates/plop-template/config.js.hbs"
+      },
+      {
+        "type": "add",
+        "path": "plop-templates/{{kebabCase name}}/index.js.hbs",
+        "templateFile": "plop-templates/plop-template/index.js.hbs"
+      }
+    ]
+  }
+]

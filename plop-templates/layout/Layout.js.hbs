@@ -1,0 +1,18 @@
+import React from 'react'
+import { Helmet } from 'react-helmet-async';
+import { LayoutProps } from 'application/models';
+
+/**
+ * {{ sentenceCase description }}
+ */
+export const {{ pascalCase name }}: React.FC<LayoutProps> = ({ children, meta }) => {
+  return (
+    <div className="{{ dashCase name }}">
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+      </Helmet>
+      {children}
+    </div>
+  )
+}

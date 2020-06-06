@@ -1,0 +1,24 @@
+import React from 'react';
+import { RouteConfig } from 'application/models';
+
+export const {{ lowerCase name }}Route: RouteConfig = {
+	name: '{{ lowerCase name }}',
+	layout: {
+    component: React.lazy(() =>
+      import('components/layouts/{{ pascalCase layout }}/default')
+    ),
+  },
+  route: {
+    path: '/{{ lowerCase name }}',
+    component: React.lazy(() => import('components/pages/{{ pascalCase name }}/default')),
+  },
+	headMeta: {
+    title: '{{ pascalCase name }} page',
+		meta: [
+			{
+				name: 'description',
+				content: '{{ description }}'
+			},
+		],
+  },
+};

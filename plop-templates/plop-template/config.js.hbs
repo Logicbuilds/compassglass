@@ -1,0 +1,17 @@
+module.exports = {
+  templateName: '{{kebabCase name}}',
+  prompts: [
+    {
+      type: 'input',
+      name: 'name',
+      message: 'What is your {{kebabCase name}} name?',
+    },
+  ],
+  actions: [
+    {
+      type: 'add',
+      path: `[DEFINE DESTINATION PATH HERE NAI]`,
+      templateFile: 'plop-templates/plop-template/index.js.hbs',
+    },
+  ],
+};

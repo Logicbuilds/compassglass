@@ -1,0 +1,17 @@
+import React from 'react'
+
+export interface {{ pascalCase name }}Props {
+  /** Example {{ pascalCase name }} property. */
+  example{{ pascalCase name }}?: string
+}
+
+/**
+ * {{ sentenceCase description }}
+ */
+export const {{ pascalCase name }}: React.FC<{{ pascalCase name }}Props> = ({ ...props }) => {
+  return (
+    <div className="{{ dashCase name }}">
+      <h1>{{ pascalCase name }}</h1>
+    </div>
+  )
+}

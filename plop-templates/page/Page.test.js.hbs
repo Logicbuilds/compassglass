@@ -1,0 +1,9 @@
+import React from 'react'
+import { render } from '@testing-library/react'
+
+import { {{ pascalCase name }} } from './{{ pascalCase name }}'
+
+test('should render {{ pascalCase name }} without exploding', () => {
+  const { container } = render(<{{ pascalCase name }} />)
+  expect(container).toBeInTheDocument()
+})
