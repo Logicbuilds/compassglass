@@ -2,16 +2,12 @@ import React from 'react';
 
 export interface ButtonProps {
   /** Example Button property. */
-  exampleButton?: string;
+  variant?: string;
 }
 
 /**
- * Basic button component
+ * Button component
  */
-export const Button: React.FC<ButtonProps> = ({ ...props }) => {
-  return (
-    <div className="button">
-      <button>Button</button>
-    </div>
-  );
+export const Button: React.FC<ButtonProps> = ({ variant, children }) => {
+  return <button className="button">{children}</button>;
 };
