@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { LayoutProps } from 'application/models';
-import { MenuContainer } from 'components/common';
+import { Header, Footer } from 'components/common';
 
 /**
  * Basic page layout component
@@ -15,8 +15,9 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
           <meta key={metaItem.name} {...metaItem} />
         ))}
       </Helmet>
-      <MenuContainer />
+      <Header />
       {children}
+      <Footer />
     </div>
   );
 };

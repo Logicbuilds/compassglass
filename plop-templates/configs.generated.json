@@ -15,7 +15,11 @@
       {
         "type": "list",
         "name": "path",
-        "choices": ["basic", "common", "system"],
+        "choices": [
+          "basic",
+          "common",
+          "system"
+        ],
         "message": "Where you would like to add the component (common)?",
         "default": "common"
       }
@@ -101,7 +105,9 @@
       {
         "type": "list",
         "name": "layout",
-        "choices": ["BasicLayout"],
+        "choices": [
+          "BasicLayout"
+        ],
         "message": "Please select a layout for your page"
       }
     ],
