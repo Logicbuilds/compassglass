@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Images
+
+import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo-Text.svg';
+
 export interface HeaderProps {
   /** Example Header property. */
   exampleHeader?: string;
@@ -14,15 +18,17 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
     <div className="section header-section">
       <div className="container header">
         <h1 className="logo">
-          <Link to="/">Compass Glass</Link>
+          <Link to="/">
+            <CompassGlassLogoSVG />
+          </Link>
         </h1>
-        <menu>
-          <Link to="/about">about</Link>
-          <Link to="/faq">faq</Link>
-          <Link to="/technical">technical</Link>
-          <Link to="/insights">insights</Link>
-          <Link to="/contact">contact</Link>
-        </menu>
+        <nav>
+          <Link to="/about">About</Link>
+          <Link to="/faq">FAQ</Link>
+          <Link to="/technical">Technical</Link>
+          <Link to="/insights">Insights</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
       </div>
     </div>
   );

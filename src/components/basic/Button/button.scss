@@ -1,1 +1,8 @@
-.button{}
+.button {
+  background: $deepcerulean;
+  @include font-size(25px);
+  color: #fff;
+  width: 180px;
+  height: 60px;
+  border: none;
+}

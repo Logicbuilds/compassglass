@@ -1,6 +1,8 @@
 .header-section {
   background: #ffffff;
-  box-shadow: 0px 1px 5px #d4e2f5;
+  box-shadow: $box-shadow-header;
+  z-index: 1;
+  position: relative;
 }
 
 .header {
@@ -11,30 +13,21 @@
   justify-content: space-between;
   align-items: center;
 
-  .logo > a {
-    font-size: 47px;
-    color: #231d5e;
-    &:active {
-      color: #231d5e;
-    }
-    text-decoration: none;
-  }
-
-  menu {
-    color: #797585;
+  nav {
+    @include font-size(25px);
     text-transform: uppercase;
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    justify-content: space-between;
 
     a {
       text-decoration: none;
-      color: #797585;
-      transition: color ease-in-out 0.05s;
+      color: $topaz;
+      @include transition(all 0.25s linear);
 
       &:hover {
         color: lighten($color: #797585, $amount: 20);
-      }
-
-      &:not(:last-child) {
-        margin-right: 40px;
       }
     }
   }

@@ -1,2 +1,21 @@
-.home {
+.home-section {
+  background: $blacksqueeze
+    url('../../../assets/images/Hero-Building-Graphic.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+.hero {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-height: 550px;
+  justify-content: space-between;
+
+  p {
+    @include font-size(25px);
+    line-height: $line-height-bigger;
+  }
 }
