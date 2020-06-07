@@ -11,17 +11,19 @@ export interface HeaderProps {
  */
 export const Header: React.FC<HeaderProps> = ({ ...props }) => {
   return (
-    <div className="header">
-      <h1 className="logo">
-        <Link to="/">Compass Glass</Link>
-      </h1>
-      <menu>
-        <Link to="/about">about</Link>
-        <Link to="/faq">faq</Link>
-        <Link to="/technical">technical</Link>
-        <Link to="/insights">insights</Link>
-        <Link to="/contact">contact</Link>
-      </menu>
+    <div className="section header-section">
+      <div className="container header">
+        <h1 className="logo">
+          <Link to="/">Compass Glass</Link>
+        </h1>
+        <menu>
+          <Link to="/about">about</Link>
+          <Link to="/faq">faq</Link>
+          <Link to="/technical">technical</Link>
+          <Link to="/insights">insights</Link>
+          <Link to="/contact">contact</Link>
+        </menu>
+      </div>
     </div>
   );
 };
