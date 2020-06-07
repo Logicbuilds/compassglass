@@ -1,8 +1,37 @@
 .button {
-  background: $deepcerulean;
-  @include font-size(25px);
+  position: relative;
+  background: $glacier;
   color: #fff;
+  @include font-size(25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 180px;
   height: 60px;
   border: none;
+  line-height: $line-height-default;
+  @include transition(all 0.2s linear);
+  border: 1px solid transparent;
+
+  &.default {
+    background: $glacier;
+    border-color: $glacier;
+  }
+
+  &.primary {
+    background: $deepcerulean;
+    border-color: $deepcerulean;
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    top: 1px;
+    opacity: 0.95;
+  }
 }

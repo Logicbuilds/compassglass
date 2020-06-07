@@ -12,7 +12,9 @@ export const Home: React.FC = () => {
             that customers will benefit in terms of quality and service
             exceeding best expectations and at competitive market rates!
           </p>
-          <Button>Learn more</Button>
+          <Button redirect="/about" buttonClass="primary">
+            Learn more
+          </Button>
         </div>
       </div>
     </div>
