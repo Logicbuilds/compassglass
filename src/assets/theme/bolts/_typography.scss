@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+a {
+  color: $deepcerulean;
+}
+
 h1,
 h2,
 h3,
@@ -12,7 +16,7 @@ h6 {
 }
 
 h1 {
-  @include font-size(40px);
+  @include font-size(45px);
   font-weight: 600;
   color: $congressblue;
 }
@@ -21,6 +25,19 @@ h2 {
   @include font-size(40px);
   font-weight: 400;
   color: $deepcerulean;
+}
+
+h3 {
+  @include font-size(45px);
+  font-weight: 400;
+  color: $deepcerulean;
+}
+
+h4 {
+  @include font-size(25px);
+  font-weight: bold;
+  color: $deepcerulean;
+  letter-spacing: -1px;
 }
 
 p {

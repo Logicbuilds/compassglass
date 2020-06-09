@@ -1,9 +1,5 @@
 .home-section {
-  background: $blacksqueeze
-    url('../../../assets/images/Hero-Building-Graphic.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
+  position: relative;
 }
 
 .hero {
@@ -11,11 +7,41 @@
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  min-height: 525px;
+  min-height: 550px;
   justify-content: space-between;
 
   p {
     @include font-size(25px);
-    line-height: $line-height-bigger;
+    color: darken($congressblue, 20%);
+    line-height: $line-height-2;
+  }
+}
+
+.cards-container {
+  box-shadow: $box-shadow-cards-container;
+}
+
+.card {
+  background: $card-background-primary;
+  padding: 80px;
+
+  &.secondary {
+    background: $card-background-secondary;
+  }
+
+  &.card-with-map {
+    background: $card-background-primary
+      url('../../../assets/images/Compass-Glass-Map-Background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+  }
+
+  p {
+    @include font-size(20px);
+    line-height: $line-height-2;
+    color: $wedgewood;
+    max-width: 30vw;
+    padding: 1rem 0;
   }
 }

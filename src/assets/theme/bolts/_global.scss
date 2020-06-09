@@ -20,6 +20,9 @@ body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: $blacksqueeze url('../../images/Compass-Glass-Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -31,4 +34,42 @@ body {
   width: $section;
   display: flex;
   justify-content: center;
+}
+
+address {
+  padding: 25px 0;
+  font-style: normal;
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  span,
+  span a {
+    @include font-size(24px);
+    font-weight: 300;
+    line-height: $line-height-default;
+    text-decoration: none;
+    padding: 0.1rem 0;
+    display: block;
+  }
+}
+
+// Utilities
+
+.border-top {
+  border-top: 1px solid;
+}
+
+.border-linkwater {
+  border-color: $linkwater;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 40px;
 }

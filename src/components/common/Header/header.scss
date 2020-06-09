@@ -1,15 +1,15 @@
 .header-section {
-  background: #ffffff;
-  box-shadow: $box-shadow-header;
+  background: transparent;
   z-index: 1;
   position: relative;
+  min-width: 350px;
 }
 
 .header {
   width: 100%;
-  max-width: $container;
-  height: 164px;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
@@ -19,11 +19,15 @@
     width: 100%;
     max-width: 670px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    min-height: 250px;
+    max-width: 200px;
+    margin: 40px 0 0 30px;
 
     a {
       text-decoration: none;
-      color: $topaz;
+      color: $wedgewood;
       @include transition(all 0.25s linear);
 
       &:hover {

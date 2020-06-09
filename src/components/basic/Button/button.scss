@@ -13,6 +13,7 @@
   line-height: $line-height-default;
   @include transition(all 0.2s linear);
   border: 1px solid transparent;
+  border-radius: 5px;
 
   &.default {
     background: $glacier;

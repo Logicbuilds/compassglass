@@ -16,8 +16,10 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
         ))}
       </Helmet>
       <Header />
-      {children}
-      <Footer />
+      <div className="layout-columns">
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };

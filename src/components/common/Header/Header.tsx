@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // Images
 
-import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo-Text.svg';
+import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
 
 export interface HeaderProps {
   /** Example Header property. */
@@ -15,20 +15,22 @@ export interface HeaderProps {
  */
 export const Header: React.FC<HeaderProps> = ({ ...props }) => {
   return (
-    <div className="section header-section">
+    <div className="header-section">
       <div className="container header">
-        <h1 className="logo">
-          <Link to="/">
-            <CompassGlassLogoSVG />
-          </Link>
-        </h1>
-        <nav>
-          <Link to="/about">About</Link>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/technical">Technical</Link>
-          <Link to="/insights">Insights</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+        <div className="sticky">
+          <h1 className="logo">
+            <Link to="/">
+              <CompassGlassLogoSVG />
+            </Link>
+          </h1>
+          <nav>
+            <Link to="/about">About</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/technical">Technical</Link>
+            <Link to="/insights">Insights</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+        </div>
       </div>
     </div>
   );

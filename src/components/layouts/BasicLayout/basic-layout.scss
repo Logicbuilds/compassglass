@@ -1,2 +1,10 @@
 .basic-layout {
+  display: flex;
+  padding: 45px 0 0 45px;
+}
+
+.layout-columns {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
 }
