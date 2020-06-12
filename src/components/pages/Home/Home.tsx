@@ -55,7 +55,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
           {/* Card */}
-          <div className="card card-with-map border-top border-linkwater">
+          <div className="card card-with-map card-with-query border-top border-linkwater">
             <div className="grid justify-content-center">
               <div className="grid-item grid-item-tablet-5">
                 <address>
@@ -83,11 +83,14 @@ export const Home: React.FC = () => {
                 </address>
               </div>
               <div className="grid-item grid-item-tablet-5">
-                <h3>Have a query?</h3>
-                <p>Looking for a specific product or have a question? </p>
-                <Button redirect="/about" buttonClass="primary">
-                  Contact Us
-                </Button>
+                <div className="flex flex-column justify-content-between height-250">
+                  <h3>Have a query?</h3>
+                  <p>Looking for a specific product or have a question?</p>
+                  <p>Contact Compass Glass today for more information.</p>
+                  <Button redirect="/about" buttonClass="primary">
+                    Contact Us
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

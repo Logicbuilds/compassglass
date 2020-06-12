@@ -12,9 +12,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  @include transition(all 0.15s linear);
 
   nav {
     @include font-size(25px);
+
     text-transform: uppercase;
     width: 100%;
     max-width: 670px;
@@ -23,15 +26,53 @@
     justify-content: space-between;
     min-height: 250px;
     max-width: 200px;
-    margin: 40px 0 0 30px;
+    margin: 40px 0 0 0;
 
     a {
+      position: relative;
+      padding: 10px 0 10px 15px;
+      margin: 5px 0;
+      outline: none;
       text-decoration: none;
       color: $wedgewood;
-      @include transition(all 0.25s linear);
+      @include transition(all 0.5s);
+      letter-spacing: 0.25px;
+      z-index: 1;
 
-      &:hover {
-        color: lighten($color: #797585, $amount: 20);
+      &:before,
+      &:after {
+        @include transition(all 0.5s);
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+        color: #e6f0f9;
+      }
+
+      &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 1;
+        height: 100%;
+        content: '.';
+        color: transparent;
+        background: $congressblue;
+        visibility: none;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        width: 100%;
       }
     }
   }

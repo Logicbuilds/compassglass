@@ -1,6 +1,6 @@
 .button {
   position: relative;
-  background: $glacier;
+  background: $pigeonpost;
   color: #fff;
   @include font-size(25px);
   display: flex;
@@ -16,18 +16,18 @@
   border-radius: 5px;
 
   &.default {
-    background: $glacier;
-    border-color: $glacier;
+    background: $pigeonpost;
+    border-color: $pigeonpost;
   }
 
   &.primary {
-    background: $deepcerulean;
-    border-color: $deepcerulean;
+    background: $pigeonpost;
+    border-color: $pigeonpost;
     color: #fff;
   }
 
   &:hover {
-    opacity: 0.8;
+    background: darken($pigeonpost, 10%);
   }
 
   &:active,

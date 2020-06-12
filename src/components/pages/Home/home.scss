@@ -6,7 +6,7 @@
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 60%;
   min-height: 550px;
   justify-content: space-between;
 
@@ -29,6 +29,14 @@
     background: $card-background-secondary;
   }
 
+  p {
+    @include font-size(20px);
+    line-height: $line-height-2;
+    color: $wedgewood;
+    max-width: 30vw;
+    padding: 1rem 0;
+  }
+
   &.card-with-map {
     background: $card-background-primary
       url('../../../assets/images/Compass-Glass-Map-Background.png');
@@ -37,11 +45,10 @@
     background-position: right center;
   }
 
-  p {
-    @include font-size(20px);
-    line-height: $line-height-2;
-    color: $wedgewood;
-    max-width: 30vw;
-    padding: 1rem 0;
+  &.card-with-query {
+    p {
+      padding: 0;
+      margin: 0;
+    }
   }
 }

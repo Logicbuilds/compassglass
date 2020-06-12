@@ -23,7 +23,7 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
               <CompassGlassLogoSVG />
             </Link>
           </h1>
-          <nav>
+          <nav className="cl-effect-21">
             <Link to="/about">About</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/technical">Technical</Link>
