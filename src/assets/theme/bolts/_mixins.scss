@@ -96,15 +96,16 @@ $items: 12;
 .grid {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1rem;
+  margin: 0;
+  width: 100%;
 }
 
 .grid-items-have-gap {
   .grid-item {
-    padding: 0 $spacing-10;
+    padding: 0 $spacing-1rem;
   }
   .button {
-    margin: $spacing-10;
+    margin: $spacing-1rem;
   }
 }
 

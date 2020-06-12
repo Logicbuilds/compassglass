@@ -2,18 +2,28 @@
   position: relative;
   background: $pigeonpost;
   color: #fff;
-  @include font-size(25px);
+  @include font-size(22px);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 180px;
-  height: 60px;
-  border: none;
+  min-width: 160px;
+  max-width: 160px;
+  min-height: 50px;
   line-height: $line-height-default;
   @include transition(all 0.2s linear);
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 0;
+
+  &:hover {
+    background: darken($pigeonpost, 20%);
+  }
+
+  &:active,
+  &:focus {
+    top: 1px;
+    opacity: 0.95;
+  }
 
   &.default {
     background: $pigeonpost;
@@ -21,18 +31,12 @@
   }
 
   &.primary {
-    background: $pigeonpost;
-    border-color: $pigeonpost;
+    background: $wedgewood;
+    border-color: $wedgewood;
     color: #fff;
-  }
 
-  &:hover {
-    background: darken($pigeonpost, 10%);
-  }
-
-  &:active,
-  &:focus {
-    top: 1px;
-    opacity: 0.95;
+    &:hover {
+      background: darken($wedgewood, 10%);
+    }
   }
 }

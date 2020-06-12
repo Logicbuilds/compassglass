@@ -1,13 +1,21 @@
 .footer-section {
-  background: #f3f9fc;
+  background: $congressblue;
 }
 
 .footer {
   color: #80adc3;
-
   width: 100%;
   height: 150px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0 $spacing-4rem;
+
+  p {
+    color: $pigeonpost;
+    @include font-size(18px);
+  }
+
+  .icon-group {
+    min-width: 145px;
+  }
 }

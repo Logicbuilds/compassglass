@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from 'components/basic';
 
+// Images
+
 let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
 let imageGlassBenefits = require('../../../assets/images/Compass-Glass-Glass-Benefits.jpg');
 
