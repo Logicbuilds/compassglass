@@ -14,6 +14,7 @@
   align-items: center;
   position: relative;
   @include transition(all 0.15s linear);
+  padding-left: $spacing-4rem;
 
   nav {
     @include font-size(25px);
@@ -25,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 250px;
-    max-width: 200px;
+    max-width: 250px;
     margin: 40px 0 0 0;
 
     a {

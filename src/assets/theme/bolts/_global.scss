@@ -60,6 +60,27 @@ address {
   justify-content: space-between;
 }
 
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('../../images/Compass-Glass-Background.jpg') no-repeat;
+  background-size: cover;
+}
+
 // Utilities
 
 .flex {
@@ -102,20 +123,28 @@ address {
   align-items: center;
 }
 
-.sticky {
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
   position: sticky;
   top: 45px;
 }
 
-.min-vw-25 {
+.min-vw-15 {
+  min-width: 15vw;
+}
+
+.min-vh-25 {
   min-height: 25vh;
 }
 
-.min-vw-100 {
+.min-vh-100 {
   min-height: 100vh;
 }
 
-.vw-100 {
+.vh-100 {
   height: 100vh;
 }
 
