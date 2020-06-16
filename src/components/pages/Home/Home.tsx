@@ -21,7 +21,7 @@ export const Home: React.FC = () => {
             Learn more
           </Button>
         </div>
-        <div className="cards-container">
+        <div className="cards-container frosted-glass">
           {/* Card */}
           <div className="card">
             <div className="grid">
@@ -40,7 +40,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
           {/* Card */}
-          <div className="card secondary border-top border-linkwater">
+          <div className="card secondary">
             <div className="grid">
               <div className="grid-item grid-item-tablet-5 grid-item-desktop-5">
                 <h2>Many Benefits Of Glass</h2>
