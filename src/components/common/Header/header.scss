@@ -36,51 +36,13 @@
       outline: none;
       text-decoration: none;
       color: $wedgewood;
-      @include transition(all 0.5s);
+      @include transition(all 0.15s);
       letter-spacing: -0.5px;
       z-index: 1;
       font-weight: 500;
 
-      &:before,
-      &:after {
-        @include transition(all 0.5s);
-      }
-
-      &:hover,
-      &:focus {
-        outline: none;
-        color: $wedgewood;
-      }
-
-      &:after {
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin: auto;
-        width: 0;
-        height: 100%;
-        content: '.';
-        color: transparent;
-        background: #fff;
-        visibility: none;
-        opacity: 0;
-        z-index: -1;
-        border-radius: 0;
-      }
-
-      &:hover:after {
-        opacity: 1;
-        visibility: visible;
-        height: 100%;
-        width: 100%;
-        // background: rgba($glacier, 0.25);
-        background: linear-gradient(
-          90deg,
-          rgba($glacier, 0.25) 0%,
-          rgba($glacier, 0.15) 40%,
-          rgba(255, 255, 255, 0) 100%
-        );
+      &:hover {
+        color: $valhalla;
       }
     }
   }
