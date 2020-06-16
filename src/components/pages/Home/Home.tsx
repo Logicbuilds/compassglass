@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
               <div className="grid-item grid-item-tablet-4 grid-item-desktop-4 grid-item-huge-4">
                 <img src={imageWeKnowGlass} alt="" />
               </div>
-              <div className="grid-item grid-item-tablet-8 grid-item-desktop-4 grid-item-offset-1">
+              <div className="grid-item grid-item-tablet-8 grid-item-desktop-5 grid-item-offset-1">
                 <h2>We Know Glass</h2>
                 <p>
                   Compass Glass has assembled a strong team of professional
@@ -85,7 +85,7 @@ export const Home: React.FC = () => {
                 </address>
               </div>
               <div className="grid-item grid-item-tablet-5">
-                <div className="flex flex-column justify-content-between height-250">
+                <div className="flex flex-column justify-content-between height-350">
                   <h3>Have a query?</h3>
                   <p>Looking for a specific product or have a question?</p>
                   <p>Contact Compass Glass today for more information.</p>

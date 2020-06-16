@@ -33,6 +33,10 @@
     background: $card-background-secondary;
   }
 
+  img {
+    box-shadow: $box-shadow-image;
+  }
+
   p {
     @include font-size(20px);
     line-height: $line-height-2;
