@@ -23,6 +23,7 @@ body {
   background: $blacksqueeze url('../../images/Compass-Glass-Background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -124,7 +125,11 @@ address {
 }
 
 .position-fixed {
-  position: fixed;
+  position: relative;
+
+  @include breakpoint($desktop) {
+    position: fixed;
+  }
 }
 
 .position-sticky {

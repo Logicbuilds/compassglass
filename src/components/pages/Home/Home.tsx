@@ -25,10 +25,10 @@ export const Home: React.FC = () => {
           {/* Card */}
           <div className="card">
             <div className="grid">
-              <div className="grid-item grid-item-tablet-4">
+              <div className="grid-item grid-item-tablet-4 grid-item-desktop-4 grid-item-huge-4">
                 <img src={imageWeKnowGlass} alt="" />
               </div>
-              <div className="grid-item grid-item-tablet-8">
+              <div className="grid-item grid-item-tablet-8 grid-item-desktop-4 grid-item-offset-1">
                 <h2>We Know Glass</h2>
                 <p>
                   Compass Glass has assembled a strong team of professional
@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
           {/* Card */}
           <div className="card secondary border-top border-linkwater">
             <div className="grid">
-              <div className="grid-item grid-item-tablet-6">
+              <div className="grid-item grid-item-tablet-5 grid-item-desktop-5">
                 <h2>Many Benefits Of Glass</h2>
                 <p>
                   Glass is a material with remarkable properties of fragility,
@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
                 </p>
                 <Button redirect="/about">Learn more</Button>
               </div>
-              <div className="grid-item grid-item-tablet-4">
+              <div className="grid-item grid-item-tablet-4 grid-item-desktop-5 grid-item-offset-1">
                 <img src={imageGlassBenefits} alt="" />
               </div>
             </div>
@@ -59,7 +59,7 @@ export const Home: React.FC = () => {
           {/* Card */}
           <div className="card card-with-map card-with-query border-top border-linkwater">
             <div className="grid justify-content-center">
-              <div className="grid-item grid-item-tablet-5">
+              <div className="grid-item grid-item-tablet-5 grid-item-desktop-6">
                 <address>
                   <h4>CAPE TOWN</h4>
                   <span>
