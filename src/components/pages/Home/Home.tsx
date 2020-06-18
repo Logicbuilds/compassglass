@@ -26,7 +26,11 @@ export const Home: React.FC = () => {
           <div className="card">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <img src={imageWeKnowGlass} alt="" />
+                <img
+                  src={imageWeKnowGlass}
+                  className="img-respomnsive"
+                  alt=""
+                />
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4 grid-item-offset-left-1">
                 <h2>We Know Glass</h2>
@@ -52,7 +56,11 @@ export const Home: React.FC = () => {
                 <Button redirect="/about">Learn more</Button>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <img src={imageGlassBenefits} alt="" />
+                <img
+                  src={imageGlassBenefits}
+                  className="img-respomnsive"
+                  alt=""
+                />
               </div>
             </div>
           </div>
