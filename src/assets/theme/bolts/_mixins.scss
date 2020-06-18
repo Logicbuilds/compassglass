@@ -79,7 +79,7 @@ $breakpoints: (
   mobile: 576px,
   tablet: 768px,
   laptop: 992px,
-  desktop: 1200px,
+  desktop: 1235px,
 );
 
 // media query mixin
@@ -124,10 +124,17 @@ $items: 12;
   padding: 0;
 }
 
-.grid-item-offset-1 {
+.grid-item-offset-left-1 {
   margin-left: 0;
   @include breakpoint($laptop) {
     margin-left: 8.33333333%;
+  }
+}
+
+.grid-item-offset-right-1 {
+  margin-right: 0;
+  @include breakpoint($laptop) {
+    margin-right: 8.33333333%;
   }
 }
 
