@@ -16,8 +16,8 @@ export interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ ...props }) => {
   return (
     <div className="header-section">
-      <div className="container header">
-        <div className="position-fixed flex flex-column nav-container min-vw-15">
+      <div className="header">
+        <div className="flex nav-container container">
           <h1 className="logo">
             <Link to="/">
               <CompassGlassLogoSVG />

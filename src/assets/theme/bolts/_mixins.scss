@@ -55,6 +55,13 @@
   }
 }
 
+// Custom height mixin
+// Usage example: @include breakpoint {}
+@mixin height($height...) {
+  height: $height;
+  min-height: $height;
+}
+
 // Transition
 
 @mixin transition($args...) {

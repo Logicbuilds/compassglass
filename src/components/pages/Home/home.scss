@@ -69,4 +69,8 @@
       margin: 0;
     }
   }
+
+  .card-query {
+    @include height(300px);
+  }
 }

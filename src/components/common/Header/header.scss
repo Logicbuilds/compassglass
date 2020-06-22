@@ -11,14 +11,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
   @include transition(all 0.15s linear);
   padding-left: $spacing-4rem;
-
-  @include breakpoint($desktop) {
-    align-items: center;
-  }
 
   .flex-column {
     flex-direction: row;
@@ -34,25 +30,14 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 0 $spacing-4rem;
+    justify-content: flex-end;
+    margin: 0 $spacing-4rem 0 0;
     align-items: center;
-    max-width: 630px;
-    min-width: 630px;
-
-    @include breakpoint($desktop) {
-      flex-direction: column;
-      min-height: 250px;
-      margin: 40px 0 0 0;
-      align-items: flex-start;
-      max-width: 250px;
-      min-width: 250px;
-    }
 
     a {
       position: relative;
       padding: 10px 0 10px 15px;
-      margin: 5px 0;
+      margin: 5px 25px;
       outline: none;
       text-decoration: none;
       color: $wedgewood;

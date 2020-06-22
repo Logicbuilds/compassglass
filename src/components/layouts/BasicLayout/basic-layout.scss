@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 45px 0 0 45px;
-
-  @include breakpoint($desktop) {
-    flex-direction: row;
-  }
 }
 
 .layout-columns {

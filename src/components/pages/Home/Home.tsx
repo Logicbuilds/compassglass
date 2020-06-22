@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
     <div className="section home-section">
       <div className="home container">
         <div className="hero">
-          <h1>Encompassing all your glass needs</h1>
+          <h1>Built around you</h1>
           <p>
             Our large pool of skills at every stage of our operation ensures
             that customers will benefit in terms of quality and service
@@ -26,11 +26,7 @@ export const Home: React.FC = () => {
           <div className="card">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <img
-                  src={imageWeKnowGlass}
-                  className="img-respomnsive"
-                  alt=""
-                />
+                <img src={imageWeKnowGlass} className="img-responsive" alt="" />
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4 grid-item-offset-left-1">
                 <h2>We Know Glass</h2>
@@ -69,7 +65,7 @@ export const Home: React.FC = () => {
             <div className="grid justify-content-center">
               <div className="grid-item grid-item-tablet-5 grid-item-desktop-6">
                 <address>
-                  <h4>CAPE TOWN</h4>
+                  <h4>Compass Glass - Cape Town</h4>
                   <span>
                     <a href="mailto:+27219817785">+27 (0) 21 981 7785</a>
                   </span>
@@ -93,7 +89,7 @@ export const Home: React.FC = () => {
                 </address>
               </div>
               <div className="grid-item grid-item-tablet-5">
-                <div className="flex flex-column justify-content-between height-350">
+                <div className="flex flex-column justify-content-between card-query">
                   <h3>Have a query?</h3>
                   <p>Looking for a specific product or have a question?</p>
                   <p>Contact Compass Glass today for more information.</p>
