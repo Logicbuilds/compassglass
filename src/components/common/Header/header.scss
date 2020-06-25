@@ -14,7 +14,8 @@
   align-items: center;
   position: relative;
   @include transition(all 0.15s linear);
-  padding-left: $spacing-4rem;
+  padding: 0 $spacing-4rem $spacing-2rem $spacing-5rem;
+  max-height: 250px;
 
   .flex-column {
     flex-direction: row;
@@ -31,8 +32,12 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 0 $spacing-4rem 0 0;
-    align-items: center;
+    margin: 0 0 $spacing-1rem 0;
+    align-items: flex-end;
+
+    @include breakpoint($desktop) {
+      width: 60vw;
+    }
 
     a {
       position: relative;
@@ -49,15 +54,22 @@
       &:hover {
         color: $valhalla;
       }
+
+      &.active {
+        color: $valhalla;
+        font-weight: 600;
+      }
     }
   }
 }
 
 .logo {
+  position: relative;
+  top: $spacing-3rem;
   svg {
     max-width: 100px;
     @include breakpoint($desktop) {
-      max-width: 100%;
+      max-width: 80%;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 // Images
 
@@ -24,11 +24,21 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
             </Link>
           </h1>
           <nav>
-            <Link to="/about">About</Link>
-            <Link to="/faq">FAQ</Link>
-            <Link to="/technical">Technical</Link>
-            <Link to="/insights">Insights</Link>
-            <Link to="/contact">Contact</Link>
+            <NavLink activeClassName="active" to="/about">
+              About
+            </NavLink>
+            <NavLink activeClassName="active" to="/faq">
+              FAQ
+            </NavLink>
+            <NavLink activeClassName="active" to="/technical">
+              Technical
+            </NavLink>
+            <NavLink activeClassName="active" to="/insights">
+              Insights
+            </NavLink>
+            <NavLink activeClassName="active" to="/contact">
+              Contact
+            </NavLink>
           </nav>
         </div>
       </div>

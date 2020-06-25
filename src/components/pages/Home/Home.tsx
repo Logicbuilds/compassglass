@@ -29,11 +29,11 @@ export const Home: React.FC = () => {
                 <img src={imageWeKnowGlass} className="img-responsive" alt="" />
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4 grid-item-offset-left-1">
-                <h2>We Know Glass</h2>
+                <h2>About Compass Glass</h2>
                 <p>
-                  Compass Glass has assembled a strong team of professional
-                  managers, supervisors and operators with an extensive range of
-                  experience in the building glass Industry.
+                  Compass Glass (Pty) Ltd was established in 2008 at our
+                  premises in Brackenrite Business Park situated in Brackenfell,
+                  Cape Town and is a wholly-owned subsidiary of The Mazor Group.
                 </p>
                 <Button redirect="/about">Learn more</Button>
               </div>
