@@ -3,73 +3,24 @@
 }
 
 .hero {
-  padding: 20px 0 100px 0;
+  padding: 20px 0 100px $spacing * 4;
   display: flex;
   flex-direction: column;
   max-width: 50%;
   justify-content: space-between;
 
   @include breakpoint($desktop) {
-    padding: 100px 0 100px 4rem;
+    padding: 100px $spacing * 4;
     max-width: 63%;
+  }
+
+  @include breakpoint(1560px) {
+    padding: 100px 0;
   }
 
   p {
     @include font-size(25px);
     color: darken($congressblue, 20%);
     line-height: $line-height-2;
-  }
-}
-
-.cards-container {
-  box-shadow: $box-shadow-cards-container;
-  position: relative;
-}
-
-.frosted-glass {
-  box-shadow: 0 0 1rem 0 rgb(187, 209, 223);
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-}
-
-.card {
-  background: inherit;
-  padding: 80px 60px;
-  position: relative;
-
-  &.secondary {
-    background: $card-background-secondary;
-    background: inherit;
-  }
-
-  img {
-    box-shadow: $box-shadow-image;
-  }
-
-  p {
-    @include font-size(20px);
-    line-height: $line-height-2;
-    color: $wedgewood;
-    max-width: 30vw;
-    padding: 1rem 0;
-  }
-
-  &.card-with-map {
-    background: $card-background-primary
-      url('../../../assets/images/Compass-Glass-Map-Background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-  }
-
-  &.card-with-query {
-    p {
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .card-query {
-    @include height(300px);
   }
 }

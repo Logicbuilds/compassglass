@@ -21,14 +21,14 @@ export const Home: React.FC = () => {
             Learn more
           </Button>
         </div>
-        <div className="cards-container frosted-glass">
+        <div className="cards-container glass frosted-glass">
           {/* Card */}
           <div className="card">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
                 <img src={imageWeKnowGlass} className="img-responsive" alt="" />
               </div>
-              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4 grid-item-offset-left-1">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-5 grid-item-offset-left-1">
                 <h2>About Compass Glass</h2>
                 <p>
                   Compass Glass (Pty) Ltd was established in 2008 at our
@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
           {/* Card */}
           <div className="card secondary">
             <div className="grid">
-              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4 grid-item-offset-right-1">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-right-1">
                 <h2>Many Benefits Of Glass</h2>
                 <p>
                   Glass is a material with remarkable properties of fragility,
@@ -61,35 +61,42 @@ export const Home: React.FC = () => {
             </div>
           </div>
           {/* Card */}
-          <div className="card card-with-map card-with-query border-top border-linkwater">
+          <div className="card">
             <div className="grid justify-content-center">
               <div className="grid-item grid-item-tablet-5 grid-item-desktop-6">
                 <address>
                   <h4>Compass Glass - Cape Town</h4>
+                  <address>
+                    Unit A6, Brackenrite Business Park, Kruis Road, Brackenfell,
+                    Cape Town 7560
+                  </address>
                   <span>
-                    <a href="mailto:+27219817785">+27 (0) 21 981 7785</a>
+                    <a href="mailto:+27219817785">(021) 981 7785</a>
                   </span>
                   <span>
-                    <a href="mailto:technical@compassglass.co.za">
-                      technical@compassglass.co.za
+                    <a href="mailto:sales@compassglass.co.za">
+                      sales@compassglass.co.za
                     </a>
                   </span>
                 </address>
 
                 <address>
-                  <h4>GEORGE</h4>
+                  <h4>Compass Glass - George</h4>
+                  <address>
+                    120 Fichat Street, George Industrial, George 6536
+                  </address>
                   <span>
-                    <a href="mailto:+270448714321">+27 (0) 44 871 4321</a>
+                    <a href="mailto:+270448714321">(044) 873 5135</a>
                   </span>
                   <span>
-                    <a href="mailto:technical@compassglass.co.za">
-                      technical@compassglass.co.za
+                    <a href="mailto:admingeorge@compassglass.co.za">
+                      admingeorge@compassglass.co.za
                     </a>
                   </span>
                 </address>
               </div>
               <div className="grid-item grid-item-tablet-5">
-                <div className="flex flex-column justify-content-between card-query">
+                <div className="flex flex-column justify-content-between">
                   <h3>Have a query?</h3>
                   <p>Looking for a specific product or have a question?</p>
                   <p>Contact Compass Glass today for more information.</p>

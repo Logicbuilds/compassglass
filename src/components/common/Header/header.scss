@@ -14,7 +14,7 @@
   align-items: center;
   position: relative;
   @include transition(all 0.15s linear);
-  padding: 0 $spacing-4rem $spacing-2rem $spacing-5rem;
+  padding: 0 $spacing * 4 $spacing * 2 $spacing * 5;
   max-height: 250px;
 
   .flex-column {
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 0 0 $spacing-1rem 0;
+    margin: 0 0 $spacing 0;
     align-items: flex-end;
 
     @include breakpoint($desktop) {
@@ -65,11 +65,34 @@
 
 .logo {
   position: relative;
-  top: $spacing-3rem;
+  top: $spacing * 3;
   svg {
     max-width: 100px;
     @include breakpoint($desktop) {
       max-width: 80%;
+    }
+  }
+}
+
+.layout-aside {
+  .header-section {
+    min-width: 400px;
+  }
+
+  .header {
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+
+    .nav-container {
+      flex-direction: column;
+    }
+
+    nav {
+      flex-direction: column;
+      width: 100%;
+      margin-top: $spacing * 6;
+      align-items: flex-start;
     }
   }
 }

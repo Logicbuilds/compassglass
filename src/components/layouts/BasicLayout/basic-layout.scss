@@ -10,3 +10,52 @@
   padding: 0;
   margin: 0;
 }
+
+.layout-aside {
+  flex-direction: row;
+}
+
+.cards-container {
+  position: relative;
+}
+
+.card {
+  background: inherit;
+  padding: 80px 60px;
+  position: relative;
+
+  &.secondary {
+    background: $card-background-secondary;
+    background: inherit;
+  }
+
+  img {
+    box-shadow: none;
+  }
+
+  h2,
+  h3 {
+    padding-bottom: $spacing;
+  }
+
+  p {
+    @include font-size(20px);
+    line-height: $line-height-2;
+    color: $wedgewood;
+    max-width: 30vw;
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+
+  .button {
+    margin-top: $spacing;
+  }
+
+  &.card-with-map {
+    background: $card-background-primary
+      url('../../../assets/images/Compass-Glass-Map-Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+  }
+}

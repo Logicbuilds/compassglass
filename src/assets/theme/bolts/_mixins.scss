@@ -109,10 +109,10 @@ $items: 12;
 
 .grid-items-have-gap {
   .grid-item {
-    padding: 0 $spacing-1rem;
+    padding: 0 $spacing;
   }
   .button {
-    margin: $spacing-1rem;
+    margin: $spacing;
   }
 }
 

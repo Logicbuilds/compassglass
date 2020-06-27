@@ -11,13 +11,8 @@ import { Header, Footer } from 'components/common';
  */
 export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
   return (
-    <div className="basic-layout">
-      {/* <div className="video-wrapper">
-        <video playsInline autoPlay muted loop poster={backgroundVideoPoster}>
-          {/* <source src="polina.webm" type="video/webm" /> */}
-      {/* <source src={backgroundVideo} type="video/mp4" /> */}
-      {/* </video> */}
-      {/* </div> */}
+    //  layout-aside
+    <div className="basic-layout layout-aside">
       <Helmet>
         <title>{headMeta.title}</title>
         {headMeta.meta.map((metaItem) => (
