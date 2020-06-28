@@ -6,6 +6,13 @@ import { Button } from 'components/basic';
 let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
 let imageGlassBenefits = require('../../../assets/images/Compass-Glass-Glass-Benefits.jpg');
 
+let certificationLogoSAGGA = require('../../../assets/images/logo-certification-sagga.png');
+let certificationLogoGGF = require('../../../assets/images/logo-certification-ggf.png');
+let certificationLogoSABS = require('../../../assets/images/logo-certification-sabs.png');
+let certificationLogoASDA = require('../../../assets/images/logo-certification-asda.png');
+let certificationLogoSAGI = require('../../../assets/images/logo-certification-sagi.png');
+let certificationLogoSS = require('../../../assets/images/logo-certification-ss.png');
+
 export const Home: React.FC = () => {
   return (
     <div className="section home-section">
@@ -23,7 +30,16 @@ export const Home: React.FC = () => {
         </div>
         <div className="cards-container glass frosted-glass">
           {/* Card */}
-          <div className="card">
+          <div className="card certifications-logos">
+            <img src={certificationLogoSAGGA} alt="" />
+            <img src={certificationLogoGGF} alt="" />
+            <img src={certificationLogoSABS} alt="" />
+            <img src={certificationLogoASDA} alt="" />
+            <img src={certificationLogoSAGI} alt="" />
+            <img src={certificationLogoSS} alt="" />
+          </div>
+          {/* Card */}
+          <div className="card card-padding-default">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
                 <img src={imageWeKnowGlass} className="img-responsive" alt="" />
@@ -40,7 +56,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
           {/* Card */}
-          <div className="card secondary">
+          <div className="card card-padding-default secondary">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-right-1">
                 <h2>Many Benefits Of Glass</h2>
@@ -61,7 +77,7 @@ export const Home: React.FC = () => {
             </div>
           </div>
           {/* Card */}
-          <div className="card padding-top-1">
+          <div className="card card-padding-default padding-top-1">
             <h2 className="padding-bottom-3">Get in touch</h2>
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
@@ -127,10 +143,6 @@ export const Home: React.FC = () => {
                 ></iframe>
               </div>
             </div>
-          </div>
-          {/* Card */}
-          <div className="card secondary">
-            <div className="certifications-logos"></div>
           </div>
           {/* Card */}
           <div className="card secondary">

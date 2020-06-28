@@ -20,8 +20,6 @@
 }
 
 .card {
-  background: inherit;
-  padding: 80px 60px;
   position: relative;
 
   &.secondary {
@@ -58,4 +56,8 @@
     background-size: cover;
     background-position: right center;
   }
+}
+
+.card-padding-default {
+  padding: 80px 60px;
 }
