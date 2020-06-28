@@ -13,7 +13,7 @@
   line-height: $line-height-default;
   @include transition(all 0.1s linear);
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 0;
 
   &:hover {
     background: darken($pigeonpost, 20%);

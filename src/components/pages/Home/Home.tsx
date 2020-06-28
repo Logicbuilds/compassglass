@@ -54,16 +54,17 @@ export const Home: React.FC = () => {
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
                 <img
                   src={imageGlassBenefits}
-                  className="img-respomnsive"
+                  className="img-responsive"
                   alt=""
                 />
               </div>
             </div>
           </div>
           {/* Card */}
-          <div className="card">
-            <div className="grid justify-content-center">
-              <div className="grid-item grid-item-tablet-5 grid-item-desktop-6">
+          <div className="card padding-top-1">
+            <h2 className="padding-bottom-3">Get in touch</h2>
+            <div className="grid">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <address>
                   <h4>Compass Glass - Cape Town</h4>
                   <address>
@@ -80,6 +81,23 @@ export const Home: React.FC = () => {
                   </span>
                 </address>
 
+                <p>
+                  <a href="/">Get directions</a>
+                </p>
+              </div>
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
+                <iframe
+                  title="Compass Glass Cape Town"
+                  src="https://snazzymaps.com/embed/242336"
+                  width="400px"
+                  height="350px"
+                  frameBorder="none"
+                ></iframe>
+              </div>
+            </div>
+
+            <div className="grid padding-top-3">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <address>
                   <h4>Compass Glass - George</h4>
                   <address>
@@ -94,15 +112,35 @@ export const Home: React.FC = () => {
                     </a>
                   </span>
                 </address>
+
+                <p>
+                  <a href="/">Get directions</a>
+                </p>
               </div>
-              <div className="grid-item grid-item-tablet-5">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
+                <iframe
+                  title="Compass Glass George"
+                  src="https://snazzymaps.com/embed/246367"
+                  width="400px"
+                  height="350px"
+                  frameBorder="none"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          {/* Card */}
+          <div className="card secondary">
+            <div className="grid">
+              <div className="grid-item grid-item-tablet-12">
                 <div className="flex flex-column justify-content-between">
-                  <h3>Have a query?</h3>
-                  <p>Looking for a specific product or have a question?</p>
-                  <p>Contact Compass Glass today for more information.</p>
-                  <Button redirect="/about" buttonClass="primary">
-                    Contact Us
-                  </Button>
+                  <div className="card-cta">
+                    <h3>Have a query?</h3>
+                    <p>Looking for a specific product or have a question?</p>
+                    <p>Contact Compass Glass today for more information.</p>
+                    <Button redirect="/about" buttonClass="primary">
+                      Contact Us
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>

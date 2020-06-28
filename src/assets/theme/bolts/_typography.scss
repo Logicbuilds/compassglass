@@ -23,8 +23,9 @@ h1 {
 
 h2 {
   @include font-size(40px);
-  font-weight: 400;
-  color: $deepcerulean;
+  font-weight: 500;
+  color: $nepal;
+  letter-spacing: -2px;
 }
 
 h3 {

@@ -33,8 +33,8 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
             <NavLink activeClassName="active" to="/technical">
               Technical
             </NavLink>
-            <NavLink activeClassName="active" to="/insights">
-              Insights
+            <NavLink activeClassName="active" to="/blog">
+              Blog
             </NavLink>
             <NavLink activeClassName="active" to="/contact">
               Contact

@@ -11,7 +11,7 @@
 
   @include breakpoint($desktop) {
     padding: 100px $spacing * 4;
-    max-width: 63%;
+    max-width: 80%;
   }
 
   @include breakpoint(1560px) {

@@ -17,7 +17,8 @@ export const About: React.FC<AboutProps> = ({ ...props }) => {
           <p>
             Compass Glass (Pty) Ltd was established in 2008 at our premises in
             Brackenrite Business Park situated in Brackenfell, Cape Town and is
-            a wholly-owned subsidiary of The Mazor Group.
+            a wholly-owned subsidiary of{' '}
+            <a href="http://mazor.co.za/">The Mazor Group</a>.
           </p>
 
           <p>
