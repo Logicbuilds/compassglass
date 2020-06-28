@@ -130,7 +130,11 @@ export const Home: React.FC = () => {
           </div>
           {/* Card */}
           <div className="card secondary">
-            <div className="grid">
+            <div className="certifications-logos"></div>
+          </div>
+          {/* Card */}
+          <div className="card secondary">
+            <div className="grid padding-top-0">
               <div className="grid-item grid-item-tablet-12">
                 <div className="flex flex-column justify-content-between">
                   <div className="card-cta">
