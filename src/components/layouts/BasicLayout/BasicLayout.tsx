@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { LayoutProps } from 'application/models';
 import { Header, Footer } from 'components/common';
+// import Headroom from 'react-headroom'
 
 // let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Background.jpg');
 // let backgroundVideo = require('../../../assets/videos/Compass-Glass-Video.mp4');
