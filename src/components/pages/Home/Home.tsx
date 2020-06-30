@@ -3,6 +3,7 @@ import { Button } from 'components/basic';
 
 // Images
 import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
+import { ReactComponent as IconExternalSVG } from '../../../assets/images/icon-external.svg';
 
 let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
 let imageGlassBenefits = require('../../../assets/images/Compass-Glass-Glass-Benefits.jpg');
@@ -108,7 +109,9 @@ export const Home: React.FC = () => {
                 </address>
 
                 <p>
-                  <a href="/">Get directions</a>
+                  <a href="/" className="text-decoration-none link-with-icon">
+                    <IconExternalSVG /> Get directions
+                  </a>
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
@@ -140,7 +143,9 @@ export const Home: React.FC = () => {
                 </address>
 
                 <p>
-                  <a href="/">Get directions</a>
+                  <a href="/" className="text-decoration-none link-with-icon">
+                    <IconExternalSVG /> Get directions
+                  </a>
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">

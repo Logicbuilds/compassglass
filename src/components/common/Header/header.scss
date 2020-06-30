@@ -3,6 +3,7 @@
   z-index: 1;
   position: relative;
   min-width: 350px;
+  cursor: pointer;
 }
 
 .header {
@@ -93,6 +94,23 @@
       width: 100%;
       margin-top: $spacing * 6;
       align-items: flex-start;
+    }
+  }
+}
+
+// Headroom
+
+.headroom {
+  @include transition(all 0.25s);
+}
+
+.compass-glass {
+  .headroom--unfixed {
+    @include transition(all 0.25s);
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

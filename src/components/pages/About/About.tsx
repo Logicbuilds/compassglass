@@ -10,7 +10,7 @@ export interface AboutProps {
  */
 export const About: React.FC<AboutProps> = ({ ...props }) => {
   return (
-    <div className="section home-section">
+    <div className="section about-section">
       <div className="home container">
         <div className="hero">
           <h1>About Compass Glass</h1>

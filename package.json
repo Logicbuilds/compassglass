@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-headroom": "^2.2.1",
+    "change-case": "^4.1.1",
     "dotenv": "^8.2.0",
     "node-sass": "^4.14.0",
     "react": "^16.13.1",
