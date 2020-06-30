@@ -23,4 +23,8 @@
     color: darken($congressblue, 20%);
     line-height: $line-height-2;
   }
+
+  .hero-text {
+    padding-left: $spacing * 2;
+  }
 }

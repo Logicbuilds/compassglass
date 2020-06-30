@@ -11,8 +11,8 @@ import { Header, Footer } from 'components/common';
  */
 export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
   return (
-    //  layout-aside
-    <div className="basic-layout layout-aside">
+    //  basic-layout layout-aside layout-landing
+    <div className="basic-layout layout-landing">
       <Helmet>
         <title>{headMeta.title}</title>
         {headMeta.meta.map((metaItem) => (

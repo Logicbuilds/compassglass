@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'components/basic';
 
 // Images
+import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
 
 let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
 let imageGlassBenefits = require('../../../assets/images/Compass-Glass-Glass-Benefits.jpg');
@@ -18,15 +19,24 @@ export const Home: React.FC = () => {
     <div className="section home-section">
       <div className="home container">
         <div className="hero">
-          <h1>Built around you</h1>
-          <p>
-            Our large pool of skills at every stage of our operation ensures
-            that customers will benefit in terms of quality and service
-            exceeding best expectations and at competitive market rates!
-          </p>
-          <Button redirect="/about" buttonClass="primary">
-            Learn more
-          </Button>
+          <div className="grid">
+            <div className="grid-item grid-item-tablet-3">
+              <h1 className="logo">
+                <CompassGlassLogoSVG />
+              </h1>
+            </div>
+            <div className="grid-item hero-text grid-item-tablet-9">
+              <h1>Built around you</h1>
+              <p>
+                Our large pool of skills at every stage of our operation ensures
+                that customers will benefit in terms of quality and service
+                exceeding best expectations and at competitive market rates!
+              </p>
+              <Button redirect="/about" buttonClass="primary">
+                Learn more
+              </Button>
+            </div>
+          </div>
         </div>
         <div className="cards-container glass frosted-glass">
           {/* Card */}

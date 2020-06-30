@@ -30,6 +30,7 @@ body {
 .container {
   width: 100%;
   max-width: $container;
+  margin: 0 auto;
 }
 
 .section {
@@ -90,11 +91,6 @@ address {
   transform: translateX(-50%) translateY(-50%);
   background: url('../../images/Compass-Glass-Background.jpg') no-repeat;
   background-size: cover;
-}
-
-.card-cta {
-  background: #f6fafb;
-  padding: 60px 80px;
 }
 
 .certifications-logos {
