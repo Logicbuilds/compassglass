@@ -50,20 +50,39 @@ address {
   span,
   span a,
   address {
-    @include font-size(24px);
+    @include font-size(18px);
     font-weight: 300;
     line-height: $line-height-default;
     text-decoration: none;
     padding: 0.1rem 0;
     display: block;
     color: $deepcerulean;
+
+    @include breakpoint($laptop) {
+      @include font-size(24px);
+    }
   }
 
   address {
-    padding: $spacing 0 $spacing 0;
-    max-width: 300px;
+    padding: $spacing 0;
+    max-width: 100%;
     @include font-size(20px);
     font-style: italic;
+
+    @include breakpoint($laptop) {
+      padding: $spacing 0 $spacing 0;
+      max-width: 300px;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  @include breakpoint($laptop) {
+    width: 400px;
+    height: 350px;
   }
 }
 
@@ -96,10 +115,16 @@ address {
 .certifications-logos {
   background: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 60px;
+  padding: 40px 20px;
   border-bottom: 1px solid $blacksqueeze;
+
+  @include breakpoint($laptop) {
+    flex-wrap: nowrap;
+    padding: 40px 60px;
+  }
 
   img {
     max-width: 90%;

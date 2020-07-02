@@ -9,11 +9,21 @@
   height: 150px;
   display: flex;
   justify-content: space-between;
-  padding: 0 $spacing * 4;
+  padding: 0 $spacing;
+  text-align: center;
+
+  @include breakpoint($laptop) {
+    padding: 0 $spacing * 4;
+    text-align: left;
+  }
 
   p {
     color: $pigeonpost;
-    @include font-size(18px);
+    @include font-size(14px);
+
+    @include breakpoint($laptop) {
+      @include font-size(18px);
+    }
   }
 
   .icon-group {

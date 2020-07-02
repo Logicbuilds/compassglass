@@ -68,7 +68,7 @@ export const Home: React.FC = () => {
           </div>
           {/* Card */}
           <div className="card card-padding-default secondary">
-            <div className="grid">
+            <div className="grid flex-direction-column-reverse">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-right-1">
                 <h2>Many Benefits Of Glass</h2>
                 <p>
@@ -118,8 +118,6 @@ export const Home: React.FC = () => {
                 <iframe
                   title="Compass Glass Cape Town"
                   src="https://snazzymaps.com/embed/242336"
-                  width="400px"
-                  height="350px"
                   frameBorder="none"
                 ></iframe>
               </div>
@@ -152,8 +150,6 @@ export const Home: React.FC = () => {
                 <iframe
                   title="Compass Glass George"
                   src="https://snazzymaps.com/embed/246367"
-                  width="400px"
-                  height="350px"
                   frameBorder="none"
                 ></iframe>
               </div>

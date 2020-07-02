@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .layout-columns {
@@ -34,8 +35,12 @@
         width: 100%;
         margin: 0;
         a {
-          @include font-size(22px);
-          margin: 5px 20px;
+          @include font-size(14px);
+          margin: 5px;
+          @include breakpoint($laptop) {
+            @include font-size(22px);
+            margin: 5px 20px;
+          }
         }
       }
     }
@@ -43,28 +48,45 @@
       top: 0;
       display: flex;
       align-items: center;
-      width: 100%;
       height: 100%;
       max-height: 47px;
+      text-align: center;
       a {
         max-height: 47px;
         svg {
-          max-width: 55%;
+          max-width: 60%;
+
+          @include breakpoint($laptop) {
+            max-width: 55%;
+          }
         }
       }
     }
   }
   .hero {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     .logo {
       top: 0;
+      @include breakpoint($laptop) {
+        top: 1rem;
+      }
       svg {
-        max-width: 80%;
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+
+        @include breakpoint($laptop) {
+          max-width: 80%;
+        }
       }
     }
     .hero-text {
-      padding-left: $spacing * 3;
+      padding: 4rem 2rem;
+
+      @include breakpoint($laptop) {
+        padding-left: $spacing * 3;
+      }
     }
   }
 }
@@ -77,6 +99,11 @@
 
 .card {
   position: relative;
+  text-align: center;
+
+  @include breakpoint($laptop) {
+    text-align: left;
+  }
 
   &.secondary {
     background: $card-background-secondary;
@@ -89,16 +116,25 @@
 
   h2,
   h3 {
+    padding-top: $spacing * 2;
     padding-bottom: $spacing;
+
+    @include breakpoint($laptop) {
+      padding-top: 0;
+    }
   }
 
   p {
     @include font-size(20px);
     line-height: $line-height-2;
     color: $wedgewood;
-    max-width: 30vw;
+    max-width: 100%;
     padding: 0.5rem 0;
     margin: 0;
+
+    @include breakpoint($laptop) {
+      max-width: 30vw;
+    }
   }
 
   .button {
@@ -115,7 +151,10 @@
 }
 
 .card-padding-default {
-  padding: 80px 60px;
+  padding: 40px 20px;
+  @include breakpoint($laptop) {
+    padding: 80px 60px;
+  }
 }
 
 .card-cta {
@@ -123,5 +162,9 @@
     url('../../../assets/images/Compass-Glass-Background-transparent.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: $spacing * 5 $spacing * 10;
+  padding: $spacing * 3 $spacing;
+
+  @include breakpoint($laptop) {
+    padding: $spacing * 5 $spacing * 10;
+  }
 }

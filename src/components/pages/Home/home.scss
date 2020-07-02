@@ -2,16 +2,24 @@
   position: relative;
 
   .home {
-    margin-top: -4rem;
+    margin: 0;
+    @include breakpoint($laptop) {
+      margin-top: -4rem;
+    }
   }
 }
 
 .hero {
-  padding: 20px 0 100px $spacing * 4;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 100%;
   justify-content: space-between;
+
+  @include breakpoint($laptop) {
+    max-width: 50%;
+    padding: 20px 0 100px $spacing * 4;
+  }
 
   @include breakpoint($desktop) {
     padding: 100px $spacing * 4;
@@ -23,12 +31,21 @@
   }
 
   p {
-    @include font-size(25px);
+    @include font-size(20px);
     color: darken($congressblue, 20%);
     line-height: $line-height-2;
+
+    @include breakpoint($laptop) {
+      @include font-size(25px);
+    }
   }
 
   .hero-text {
     padding-left: $spacing * 2;
+    text-align: center;
+
+    @include breakpoint($laptop) {
+      text-align: left;
+    }
   }
 }
