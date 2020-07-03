@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export interface TechnicalProps {
   /** Example Technical property. */
-  exampleTechnical?: string
+  exampleTechnical?: string;
 }
 
 /**
@@ -10,8 +10,8 @@ export interface TechnicalProps {
  */
 export const Technical: React.FC<TechnicalProps> = ({ ...props }) => {
   return (
-    <div className="technical">
+    <div className="technical section">
       <h1>Technical</h1>
     </div>
-  )
-}
+  );
+};
