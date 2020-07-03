@@ -80,6 +80,7 @@ iframe {
   width: 100%;
   height: auto;
   min-height: 350px;
+  border: none;
   @include breakpoint($laptop) {
     width: 400px;
     height: 350px;

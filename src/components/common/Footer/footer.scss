@@ -6,10 +6,10 @@
 .footer {
   color: #80adc3;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   display: flex;
   justify-content: space-between;
-  padding: 0 $spacing;
+  padding: $spacing 0;
   text-align: center;
 
   @include breakpoint($laptop) {
@@ -20,13 +20,23 @@
   p {
     color: $pigeonpost;
     @include font-size(14px);
+    max-width: 60vw;
+    margin: $spacing auto;
+    line-height: $line-height-default;
 
     @include breakpoint($laptop) {
+      max-width: 100%;
+      margin: 0;
       @include font-size(18px);
     }
   }
 
   .icon-group {
     min-width: 145px;
+    margin: $spacing 0;
+
+    @include breakpoint($laptop) {
+      margin: 0;
+    }
   }
 }

@@ -11,7 +11,7 @@ export interface FaqProps {
 export const Faq: React.FC<FaqProps> = ({ ...props }) => {
   return (
     <div className="section home-section">
-      <div className="faq container">
+      <div className="page container">
         <div className="hero">
           <h1>Frequently Asked Questions</h1>
           <p>

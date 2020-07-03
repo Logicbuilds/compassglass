@@ -6,7 +6,8 @@ import Headroom from 'react-headroom';
 import { paramCase } from 'change-case';
 
 let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Background.jpg');
-let backgroundVideo = require('../../../assets/videos/Compass-Glass-Video.mp4');
+let backgroundVideoWEBM = require('../../../assets/videos/Compass-Glass-Video.webm');
+let backgroundVideoMP4 = require('../../../assets/videos/Compass-Glass-Video.mp4');
 
 /**
  * Basic page layout component
@@ -18,8 +19,8 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
     <div className={`basic-layout layout-landing ${paramCase(headMeta.title)}`}>
       <div className="video-wrapper">
         <video playsInline autoPlay muted loop poster={backgroundVideoPoster}>
-          <source src="polina.webm" type="video/webm" />
-          <source src={backgroundVideo} type="video/mp4" />
+          <source src={backgroundVideoWEBM} type="video/webm" />
+          <source src={backgroundVideoMP4} type="video/mp4" />
         </video>
       </div>
       <Helmet>

@@ -4,15 +4,25 @@
   padding: 0;
   margin: 0;
   width: 100%;
-  // background: $blacksqueeze
-  //   url('../../../assets/images/Compass-Glass-Gradient-Background.png');
-  // background: transparentize(#fff, 0.09);
-  background: linear-gradient(
-    183deg,
-    rgba(255, 255, 255, 0.8995973389355743) 0%,
-    rgb(255, 255, 255) 25%,
-    rgba(237, 245, 249, 1) 100%
-  );
+  background: $blacksqueeze
+    url('../../../assets/images/Compass-Glass-Gradient-Background.png');
+
+  &.compass-glass {
+    background: linear-gradient(
+      183deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.9) 20%,
+      #fff 25%
+    );
+  }
+}
+
+.page {
+  padding: 0 $spacing * 2;
+
+  .hero {
+    padding-top: $spacing * 2;
+  }
 }
 
 .layout-columns {
@@ -76,7 +86,7 @@
     margin: 0 auto;
     max-width: 100%;
     .logo {
-      top: 0;
+      top: -2rem;
       @include breakpoint($laptop) {
         top: 1rem;
       }
@@ -91,7 +101,7 @@
       }
     }
     .hero-text {
-      padding: 4rem 2rem;
+      padding: 2rem 2rem 4rem 2rem;
 
       @include breakpoint($laptop) {
         padding-left: $spacing * 3;
@@ -171,7 +181,7 @@
     url('../../../assets/images/Compass-Glass-Background-transparent.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: $spacing * 3 $spacing;
+  padding: $spacing * 3 $spacing $spacing * 4 $spacing;
   border-top: 1px solid $linkwater;
 
   @include breakpoint($laptop) {
