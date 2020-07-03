@@ -8,10 +8,6 @@
   background: $blacksqueeze
     url('../../../assets/images/Compass-Glass-Gradient-Background.png');
 
-  // @include breakpoint($laptop) {
-  //   height: auto;
-  // }
-
   .video-wrapper {
     display: none;
   }
@@ -35,6 +31,7 @@
         rgba(255, 255, 255, 0.9) 20%,
         #fff 25%
       );
+      height: auto;
     }
   }
 }
