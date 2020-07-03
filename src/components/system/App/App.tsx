@@ -8,12 +8,13 @@ import { GlobalProviders } from '../GlobalProviders';
 
 const Fallback = () => {
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Fallback</h1>
+    <div className="loader-container">
+      <div className="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
