@@ -11,7 +11,7 @@
 .flex-direction-column-reverse {
   flex-direction: column-reverse;
   @include breakpoint($laptop) {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 

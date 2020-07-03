@@ -4,6 +4,15 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  // background: $blacksqueeze
+  //   url('../../../assets/images/Compass-Glass-Gradient-Background.png');
+  // background: transparentize(#fff, 0.09);
+  background: linear-gradient(
+    183deg,
+    rgba(255, 255, 255, 0.8995973389355743) 0%,
+    rgb(255, 255, 255) 25%,
+    rgba(237, 245, 249, 1) 100%
+  );
 }
 
 .layout-columns {
@@ -163,6 +172,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: $spacing * 3 $spacing;
+  border-top: 1px solid $linkwater;
 
   @include breakpoint($laptop) {
     padding: $spacing * 5 $spacing * 10;

@@ -69,7 +69,7 @@ export const Home: React.FC = () => {
           {/* Card */}
           <div className="card card-padding-default secondary">
             <div className="grid flex-direction-column-reverse">
-              <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-right-1">
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <h2>Many Benefits Of Glass</h2>
                 <p>
                   Glass is a material with remarkable properties of fragility,
