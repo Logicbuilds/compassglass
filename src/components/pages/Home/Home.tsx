@@ -15,11 +15,27 @@ let certificationLogoASDA = require('../../../assets/images/logo-certification-a
 let certificationLogoSAGI = require('../../../assets/images/logo-certification-sagi.png');
 let certificationLogoSS = require('../../../assets/images/logo-certification-ss.png');
 
+let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Gradient-Background.png');
+let backgroundVideoWEBM = require('../../../assets/videos/Compass-Glass-Video.webm');
+let backgroundVideoMP4 = require('../../../assets/videos/Compass-Glass-Video.mp4');
+
 export const Home: React.FC = () => {
   return (
     <div className="section home-section">
       <div className="home container">
         <div className="hero">
+          <div className="video-wrapper">
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              poster={backgroundVideoPoster}
+            >
+              <source src={backgroundVideoWEBM} type="video/webm" />
+              <source src={backgroundVideoMP4} type="video/mp4" />
+            </video>
+          </div>
           <div className="grid">
             <div className="grid-item grid-item-tablet-3">
               <h1 className="logo">

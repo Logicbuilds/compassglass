@@ -18,7 +18,7 @@
     }
 
     background: linear-gradient(
-      183deg,
+      180deg,
       rgba(255, 255, 255, 0.98) 0%,
       rgba(255, 255, 255, 0.9) 20%,
       #fff 60%
@@ -26,8 +26,8 @@
 
     @include breakpoint($laptop) {
       background: linear-gradient(
-        183deg,
-        rgba(255, 255, 255, 0.98) 0%,
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
         rgba(255, 255, 255, 0.9) 20%,
         #fff 25%
       );
