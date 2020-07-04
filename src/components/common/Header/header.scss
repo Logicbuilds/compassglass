@@ -45,12 +45,13 @@
 
     @include breakpoint($laptop) {
       @include font-size(25px);
-      justify-content: flex-end;
       margin: 0 0 $spacing 0;
-      align-items: flex-end;
     }
 
     @include breakpoint($desktop) {
+      justify-content: flex-end;
+      margin: 0 0 $spacing 0;
+      align-items: flex-end;
       width: 60vw;
     }
 

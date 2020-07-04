@@ -18,7 +18,7 @@
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.98) 0%,
-      rgba(255, 255, 255, 0.9) 20%,
+      rgba(255, 255, 255, 0.6) 20%,
       #fff 60%
     );
 
@@ -53,7 +53,7 @@
   }
 
   .card-padding-default {
-    padding: 60px 40px;
+    padding: 40px;
     @include breakpoint($laptop) {
       padding: 60px 80px;
     }
