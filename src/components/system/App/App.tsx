@@ -19,6 +19,11 @@ const Fallback = () => {
   );
 };
 
+// const Fallback = React.lazy(async () => {
+//   await new Promise((resolve) => setTimeout(resolve, 500));
+//   return import('./Loader');
+// });
+
 export const App: React.FC = () => {
   return (
     <Router>
