@@ -43,6 +43,9 @@ body {
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
+  @include breakpoint($laptop) {
+    background: inherit;
+  }
 }
 
 address {
@@ -98,6 +101,8 @@ iframe {
   justify-content: space-between;
 }
 
+// Background Video
+
 .video-wrapper {
   position: relative;
 }
@@ -119,6 +124,8 @@ iframe {
   background-size: cover;
 }
 
+// Certifications
+
 .certifications-logos {
   background: #fff;
   display: flex;
@@ -137,6 +144,8 @@ iframe {
     max-width: 90%;
   }
 }
+
+// Loader
 
 .loader-container {
   display: flex;

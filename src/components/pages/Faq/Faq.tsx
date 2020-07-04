@@ -10,16 +10,19 @@ export interface FaqProps {
  */
 export const Faq: React.FC<FaqProps> = ({ ...props }) => {
   return (
-    <div className="section home-section">
+    <div className="section">
       <div className="page container">
-        <div className="hero">
-          <h1>Frequently Asked Questions</h1>
-          <p>
-            Compass Glass (Pty) Ltd was established in 2008 at our premises in
-            Brackenrite Business Park situated in Brackenfell, Cape Town and is
-            a wholly-owned subsidiary of{' '}
-            <a href="http://mazor.co.za/">The Mazor Group</a>.
-          </p>
+        <div className="cards-container glass frosted-glass">
+          <div className="card card-padding-default">
+            <h1>Frequently Asked Questions</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              erat lacus, venenatis vitae volutpat mollis, vehicula ut lorem.
+              Aliquam augue elit, mattis eget dapibus in, maximus et nisl. Fusce
+              ac leo sit amet ipsum mollis blandit. Duis vel posuere massa.
+              Nullam sodales dolor eu ligula finibus convallis.{' '}
+            </p>
+          </div>
         </div>
       </div>
     </div>

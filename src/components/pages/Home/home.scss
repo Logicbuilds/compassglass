@@ -19,6 +19,7 @@
   @include breakpoint($laptop) {
     max-width: 50%;
     padding: 20px 0 100px $spacing * 4;
+    background: transparent;
   }
 
   @include breakpoint($desktop) {
@@ -46,6 +47,14 @@
 
     @include breakpoint($laptop) {
       text-align: left;
+    }
+
+    h1 {
+      @include font-size(30px);
+
+      @include breakpoint($laptop) {
+        @include font-size(55px);
+      }
     }
   }
 }
