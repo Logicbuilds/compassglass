@@ -8,30 +8,25 @@ import { GlobalProviders } from '../GlobalProviders';
 
 const Fallback = () => {
   return (
-    <div className="loader-container">
-      <div className="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <div className="loading-container">
+      <div className="loading"></div>
     </div>
   );
 };
 
-// const Fallback = React.lazy(async () => {
-//   await new Promise((resolve) => setTimeout(resolve, 500));
-//   return import('./Loader');
+// const Fallback = React.lazy(() => {
+//   new Promise((resolve) => setTimeout(resolve, 500));
+//   return import('components/common/Loader/default');
 // });
 
 export const App: React.FC = () => {
   return (
-    <Router>
-      <React.Suspense fallback={<Fallback />}>
+    <React.Suspense fallback={<Fallback />}>
+      <Router>
         <GlobalProviders>
           <InitializeRouting routeConfigs={routes} />
         </GlobalProviders>
-      </React.Suspense>
-    </Router>
+      </Router>
+    </React.Suspense>
   );
 };
