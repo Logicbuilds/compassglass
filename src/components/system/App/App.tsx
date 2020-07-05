@@ -5,23 +5,11 @@ import { routes } from 'application/core/router';
 
 import { InitializeRouting } from '../InitializeRouting';
 import { GlobalProviders } from '../GlobalProviders';
-
-const Fallback = () => {
-  return (
-    <div className="loading-container">
-      <div className="loading"></div>
-    </div>
-  );
-};
-
-// const Fallback = React.lazy(() => {
-//   new Promise((resolve) => setTimeout(resolve, 500));
-//   return import('components/common/Loader/default');
-// });
+import { Loader } from 'components/common/Loader';
 
 export const App: React.FC = () => {
   return (
-    <React.Suspense fallback={<Fallback />}>
+    <React.Suspense fallback={<Loader />}>
       <Router>
         <GlobalProviders>
           <InitializeRouting routeConfigs={routes} />
