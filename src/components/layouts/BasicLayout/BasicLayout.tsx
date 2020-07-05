@@ -12,7 +12,11 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
   window.scrollTo(0, 0);
   return (
     //  basic-layout layout-aside layout-landing
-    <div className={`basic-layout layout-landing ${paramCase(headMeta.title)}`}>
+    <div
+      className={`basic-layout layout-landing animated fadeIn slower ${paramCase(
+        headMeta.title
+      )}`}
+    >
       <Helmet>
         <title>{headMeta.title}</title>
         {headMeta.meta.map((metaItem) => (
