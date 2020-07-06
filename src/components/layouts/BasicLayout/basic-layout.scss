@@ -177,6 +177,11 @@
 
   img {
     box-shadow: none;
+    max-width: 400px;
+
+    @include breakpoint($laptop) {
+      max-width: 100%;
+    }
   }
 
   h2,

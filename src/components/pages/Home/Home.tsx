@@ -37,12 +37,12 @@ export const Home: React.FC = () => {
             </video>
           </div>
           <div className="grid">
-            <div className="grid-item grid-item-tablet-3">
+            <div className="grid-item grid-item-laptop-3">
               <h1 className="logo">
                 <CompassGlassLogoSVG />
               </h1>
             </div>
-            <div className="grid-item hero-text grid-item-tablet-9">
+            <div className="grid-item hero-text grid-item-laptop-9">
               <h1>Built around you</h1>
               <p>
                 Our large pool of skills at every stage of our operation ensures
