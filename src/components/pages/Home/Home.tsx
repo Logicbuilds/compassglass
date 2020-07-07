@@ -92,7 +92,7 @@ export const Home: React.FC = () => {
                   durability and transparency and is an essential component of
                   civilised life as we know it in the modern world.
                 </p>
-                <Button redirect="/about">Learn more</Button>
+                <Button redirect="/technical">Learn more</Button>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
                 <img
@@ -180,7 +180,7 @@ export const Home: React.FC = () => {
                     <h3>Have a query?</h3>
                     <p>Looking for a specific product or have a question?</p>
                     <p>Contact Compass Glass today for more information.</p>
-                    <Button redirect="/about" buttonClass="primary">
+                    <Button redirect="/contact" buttonClass="primary">
                       Contact Us
                     </Button>
                   </div>

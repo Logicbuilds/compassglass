@@ -13,11 +13,11 @@ export const homeRoute: RouteConfig = {
     component: React.lazy(() => import('components/pages/Home/default')),
   },
   headMeta: {
-    title: 'Compass Glass',
+    title: 'Compass Glass South Africa',
     meta: [
       {
         name: 'description',
-        content: 'Compass Glass',
+        content: 'Compass Glass South Africa',
       },
     ],
   },

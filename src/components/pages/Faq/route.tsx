@@ -2,8 +2,8 @@ import React from 'react';
 import { RouteConfig } from 'application/models';
 
 export const faqRoute: RouteConfig = {
-	name: 'faq',
-	layout: {
+  name: 'faq',
+  layout: {
     component: React.lazy(() =>
       import('components/layouts/BasicLayout/default')
     ),
@@ -12,13 +12,13 @@ export const faqRoute: RouteConfig = {
     path: '/faq',
     component: React.lazy(() => import('components/pages/Faq/default')),
   },
-	headMeta: {
-    title: 'Faq page',
-		meta: [
-			{
-				name: 'description',
-				content: 'Frequently asked questions page'
-			},
-		],
+  headMeta: {
+    title: 'Frequently Asked Questions',
+    meta: [
+      {
+        name: 'description',
+        content: 'Frequently Asked Questions',
+      },
+    ],
   },
 };

@@ -1,1 +1,85 @@
-.faq{}
+.faq {
+  .faq-container {
+    display: block;
+  }
+
+  .card {
+    h4 {
+      margin-bottom: $spacing;
+    }
+
+    p {
+      @include font-size(16px);
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+/* Accordion styles */
+
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $box-shadow-cards-container;
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: $valhalla;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: $valhalla;
+    }
+    &::after {
+      content: '\276F';
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 $spacing * 2;
+    color: $valhalla;
+    background: white;
+    transition: all 0.35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $valhalla;
+    cursor: pointer;
+    &:hover {
+      background: $valhalla;
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: $valhalla;
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: $spacing $spacing * 2;
+  }
+}

@@ -13,11 +13,11 @@ export const contactRoute: RouteConfig = {
     component: React.lazy(() => import('components/pages/Contact/default')),
   },
   headMeta: {
-    title: 'Contact',
+    title: 'Contact Compass Glass',
     meta: [
       {
         name: 'description',
-        content: 'Contact us page',
+        content: 'Contact Compass Glass',
       },
     ],
   },
