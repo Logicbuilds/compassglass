@@ -8,7 +8,6 @@ import { paramCase } from 'change-case';
  * Basic page layout component
  */
 export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
-  console.log(headMeta);
   window.scrollTo(0, 0);
   return (
     //  basic-layout layout-aside layout-landing
