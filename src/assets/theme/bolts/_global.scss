@@ -81,6 +81,7 @@ address {
     @include breakpoint($laptop) {
       padding: $spacing 0 $spacing 0;
       max-width: 300px;
+      min-height: 120px;
     }
   }
 }
@@ -122,6 +123,17 @@ iframe {
   transform: translateX(-50%) translateY(-50%);
   background: url('../../images/Compass-Glass-Background.jpg') no-repeat;
   background-size: cover;
+}
+
+// Forms
+
+.form {
+  margin: $spacing * 2 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 // Certifications

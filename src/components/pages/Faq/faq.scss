@@ -35,13 +35,13 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: $valhalla;
+    background: $congressblue;
     @include font-size(20px);
     font-weight: bold;
     cursor: pointer;
     /* Icon */
     &:hover {
-      background: $valhalla;
+      background: lighten($congressblue, 10%);
     }
     &::after {
       content: '\276F';
@@ -54,7 +54,7 @@
   &-content {
     max-height: 0;
     padding: 0 $spacing * 2;
-    color: $valhalla;
+    background: $congressblue;
     background: white;
     transition: all 0.35s;
   }
@@ -74,7 +74,7 @@
 // :checked
 input:checked {
   + .tab-label {
-    background: $valhalla;
+    background: $congressblue;
     &::after {
       transform: rotate(90deg);
     }
