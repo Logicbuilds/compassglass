@@ -134,6 +134,15 @@ iframe {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: $spacing 0;
+
+  label {
+    margin-bottom: $spacing;
+  }
+}
+
+.form-group-textarea {
+  margin: $spacing 0 0 $spacing * 2;
 }
 
 // Certifications

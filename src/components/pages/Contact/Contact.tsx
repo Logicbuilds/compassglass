@@ -56,8 +56,8 @@ export const Contact: React.FC = () => {
                       ></input>
                     </div>
                   </div>
-                  <div className="grid-item grid-item-tablet-8">
-                    <div className="form-group">
+                  <div className="grid-item grid-item-tablet-7">
+                    <div className="form-group form-group-textarea">
                       <label htmlFor="exampleFormControlTextarea1">
                         Your Message
                       </label>
