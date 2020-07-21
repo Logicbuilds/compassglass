@@ -10,73 +10,59 @@ export const Contact: React.FC = () => {
       <div className="page container">
         <div className="cards-container glass frosted-glass">
           <div className="card card-padding-default">
-            <h1>Contact Us</h1>
-            <div className="grid">
-              <div className="grid-item grid-item-laptop-12">
-                <h2>Contact Form</h2>
-                <div className="grid form">
-                  <div className="grid-item grid-item-tablet-4">
-                    <div className="form-group">
-                      <label htmlFor="inputEmail4">Your Name</label>
-                      <input
-                        type="text"
-                        name="your-name"
-                        value=""
-                        size={40}
-                        className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Name"
-                      ></input>
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="inputEmail4">Email</label>
-                      <input
-                        type="text"
-                        name="your-name"
-                        value=""
-                        size={40}
-                        className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Name"
-                      ></input>
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="inputEmail4">Phone Number</label>
-                      <input
-                        type="text"
-                        name="your-name"
-                        value=""
-                        size={40}
-                        className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Name"
-                      ></input>
-                    </div>
-                  </div>
-                  <div className="grid-item grid-item-tablet-7">
-                    <div className="form-group form-group-textarea">
-                      <label htmlFor="exampleFormControlTextarea1">
-                        Your Message
-                      </label>
-                      <textarea
-                        className="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows={3}
-                      ></textarea>
-                    </div>
-                  </div>
+            <h1>Contact Compass Glass</h1>
+            <div className="grid grid-no-wrap grid-items-have-gap">
+              <div className="grid-item grid-item-12 grid-item-laptop-4">
+                <div className="form-group">
+                  <label htmlFor="your-name">Your Name</label>
+                  <input
+                    type="text"
+                    name="your-name"
+                    value=""
+                    size={40}
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Your Name"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value=""
+                    size={40}
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Email Address"
+                  ></input>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="number">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="number"
+                    value=""
+                    size={40}
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Phone Number"
+                  ></input>
+                </div>
+                <div className="form-group form-group-textarea">
+                  <label htmlFor="exampleFormControlTextarea1">
+                    Your Message
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows={3}
+                  ></textarea>
                 </div>
               </div>
-            </div>
-
-            <h2>Our Locations</h2>
-            <div className="grid">
-              <div className="grid-item grid-item-tablet-6">
+              <div className="grid-item grid-item-12 grid-item-laptop-4">
                 <address>
-                  <h4>Compass Glass - Cape Town</h4>
+                  <h5>Compass Glass - Cape Town</h5>
                   <address>
                     Unit A6, Brackenrite Business Park, Kruis Road, Brackenfell,
                     Cape Town 7560
@@ -104,9 +90,9 @@ export const Contact: React.FC = () => {
                 ></iframe>
               </div>
 
-              <div className="grid-item grid-item-tablet-6">
+              <div className="grid-item grid-item-12 grid-item-laptop-4">
                 <address>
-                  <h4>Compass Glass - George</h4>
+                  <h5>Compass Glass - George</h5>
                   <address>
                     120 Fichat Street, George Industrial, George 6536
                   </address>

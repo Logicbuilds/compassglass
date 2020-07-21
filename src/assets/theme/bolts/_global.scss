@@ -134,15 +134,25 @@ iframe {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: $spacing 0;
+  margin: $spacing 0 $spacing * 1.5 0;
 
   label {
+    color: $valhalla;
     margin-bottom: $spacing;
+    text-align: left;
+    font-weight: $font-weight-semi-bold;
   }
-}
 
-.form-group-textarea {
-  margin: $spacing 0 0 $spacing * 2;
+  input,
+  textarea {
+    border: 1px solid $nepal;
+    padding: $spacing * 1 $spacing;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
 }
 
 // Certifications
