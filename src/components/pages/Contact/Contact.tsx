@@ -13,52 +13,51 @@ export const Contact: React.FC = () => {
             <h1>Contact Compass Glass</h1>
             <div className="grid grid-no-wrap grid-items-have-gap">
               <div className="grid-item grid-item-12 grid-item-laptop-4">
-                <div className="form-group">
-                  <label htmlFor="your-name">Your Name</label>
-                  <input
-                    type="text"
-                    name="your-name"
-                    value=""
-                    size={40}
-                    aria-required="true"
-                    aria-invalid="false"
-                    placeholder="Your Name"
-                  ></input>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    value=""
-                    size={40}
-                    aria-required="true"
-                    aria-invalid="false"
-                    placeholder="Email Address"
-                  ></input>
-                </div>
-                <div className="form-group">
-                  <label htmlFor="number">Phone Number</label>
-                  <input
-                    type="tel"
-                    name="number"
-                    value=""
-                    size={40}
-                    aria-required="true"
-                    aria-invalid="false"
-                    placeholder="Phone Number"
-                  ></input>
-                </div>
-                <div className="form-group form-group-textarea">
-                  <label htmlFor="exampleFormControlTextarea1">
-                    Your Message
-                  </label>
-                  <textarea
-                    className="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows={3}
-                  ></textarea>
-                </div>
+                <form>
+                  <div className="form-group">
+                    <label htmlFor="your-name">Your Name</label>
+                    <input
+                      type="text"
+                      name="your-name"
+                      size={40}
+                      aria-required="true"
+                      aria-invalid="false"
+                      placeholder="Your Name"
+                    ></input>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      size={40}
+                      aria-required="true"
+                      aria-invalid="false"
+                      placeholder="Email Address"
+                    ></input>
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="number">Phone Number</label>
+                    <input
+                      type="tel"
+                      name="number"
+                      size={40}
+                      aria-required="true"
+                      aria-invalid="false"
+                      placeholder="Phone Number"
+                    ></input>
+                  </div>
+                  <div className="form-group form-group-textarea">
+                    <label htmlFor="exampleFormControlTextarea1">
+                      Your Message
+                    </label>
+                    <textarea
+                      className="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows={3}
+                    ></textarea>
+                  </div>
+                </form>
               </div>
               <div className="grid-item grid-item-12 grid-item-laptop-4">
                 <address>

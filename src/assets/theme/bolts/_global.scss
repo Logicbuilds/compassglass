@@ -145,9 +145,23 @@ iframe {
 
   input,
   textarea {
-    border: 1px solid $nepal;
+    border: 2px solid $blacksqueeze;
     padding: $spacing * 1 $spacing;
     width: 100%;
+    box-shadow: $box-shadow-forms;
+    border-radius: 2px;
+    background: lighten($aliceblue, 0.5%);
+
+    &::placeholder {
+      color: $congressblue;
+    }
+
+    &:active,
+    &:focus {
+      border: 2px solid darken($blacksqueeze, 10%);
+      outline: none;
+      background: lighten($aliceblue, 5%);
+    }
   }
 
   textarea {
