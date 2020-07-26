@@ -41,7 +41,7 @@
     padding: 1em;
     background: darken($pigeonpost, 20%);
     @include font-size(20px);
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     cursor: pointer;
     /* Icon */
     &:hover {

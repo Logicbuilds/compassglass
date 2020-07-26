@@ -40,7 +40,7 @@ h3 {
   @include font-size(20px);
   font-weight: 600;
   color: $deepcerulean;
-  letter-spacing: -2.5px;
+  letter-spacing: -2px;
 
   @include breakpoint($laptop) {
     @include font-size(35px);

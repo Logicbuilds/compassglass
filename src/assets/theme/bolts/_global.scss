@@ -198,8 +198,9 @@ form {
   color: $valhalla;
   vertical-align: middle;
   border-color: transparent;
-  background: $aliceblue;
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: $box-shadow-default;
+  border-collapse: collapse;
 
   > tbody {
     vertical-align: inherit;
@@ -207,7 +208,8 @@ form {
 
   > thead {
     vertical-align: bottom;
-    background: lighten($pigeonpost, 20%);
+    background: darken($pigeonpost, 20%);
+    box-shadow: 0 1px 2px 0 $linkwater;
   }
 
   td,
@@ -215,7 +217,7 @@ form {
     border-collapse: collapse;
     border-spacing: 0;
     border: none;
-    @include font-size(18px);
+    @include font-size(20px);
     overflow: hidden;
     padding: $spacing * 1.5 $spacing * 2;
     word-break: normal;
@@ -223,15 +225,33 @@ form {
   }
 
   th {
-    @include font-size(18px);
-    font-weight: 600;
+    @include font-size(24px);
+    font-weight: $font-weight-bold;
+    box-shadow: 1px 0 2px 0 #fff;
+    color: #fff;
   }
 
   &.striped {
     td {
-      border-bottom: 1px solid lighten($pigeonpost, 10%);
+      // border-bottom: 1px solid lighten($pigeonpost, 10%);
+      box-shadow: 0 1px 2px 0 lighten($pigeonpost, 15%);
     }
     tr {
+      &:nth-child(odd) {
+        td {
+          background: lighten($linkwater, 10%);
+        }
+      }
+      td {
+        &.cell-origin {
+          color: $glacier;
+          position: relative;
+          background: #f6f8f9;
+          border-bottom: 1px solid #e3ecf3;
+          font-weight: 500;
+          box-shadow: 1px 0 1px #dfe6eb;
+        }
+      }
       &:last-child {
         td {
           border-bottom: none;
@@ -239,6 +259,15 @@ form {
       }
     }
   }
+}
+
+small {
+  line-height: $line-height-1-8;
+  color: $wedgewood;
+  padding: $spacing $spacing * 1.2;
+  margin: $spacing 0 0 0;
+  max-width: 90%;
+  display: inline-block;
 }
 
 // Certifications
