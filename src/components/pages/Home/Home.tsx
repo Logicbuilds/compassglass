@@ -76,9 +76,10 @@ export const Home: React.FC = () => {
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-5 grid-item-offset-left-1">
                 <h2>About Compass Glass</h2>
                 <p>
-                  Compass Glass (Pty) Ltd was established in 2008 at our
-                  premises in Brackenrite Business Park situated in Brackenfell,
-                  Cape Town and is a wholly-owned subsidiary of The Mazor Group.
+                  We strive not only to be the biggest glass supply company in
+                  the Western Cape, but the best - as voted for by our clients.
+                  We offer pure, customer-first care, as we put you first when
+                  it comes to service, sales and safety.
                 </p>
                 <Button redirect="/about">Learn more</Button>
               </div>

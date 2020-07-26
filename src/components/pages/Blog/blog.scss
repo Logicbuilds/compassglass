@@ -1,1 +1,26 @@
-.blog{}
+.compass-glass-blog {
+  .blog-item {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: $box-shadow-cards-container;
+    padding: $spacing * 2;
+    header {
+      margin-bottom: $spacing;
+      padding-bottom: $spacing;
+      border-bottom: 1px solid $linkwater;
+    }
+    h2 {
+      @include font-size(35px);
+      letter-spacing: -2px;
+    }
+    .blog-item-meta {
+      color: $glacier;
+    }
+    p {
+      @include font-size(18px);
+    }
+    .button {
+      padding: $spacing $spacing * 1.5;
+      min-width: 200px;
+    }
+  }
+}
