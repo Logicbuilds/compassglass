@@ -59,16 +59,24 @@ address {
   span,
   span a,
   address {
+    display: flex;
+    align-items: center;
     @include font-size(18px);
-    font-weight: 300;
+    font-weight: 400;
     line-height: $line-height-default;
     text-decoration: none;
     padding: 0.1rem 0;
-    display: block;
     color: $deepcerulean;
+    letter-spacing: -0.25px;
 
     @include breakpoint($laptop) {
-      @include font-size(24px);
+      @include font-size(20px);
+    }
+
+    svg {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
     }
   }
 
@@ -77,6 +85,7 @@ address {
     max-width: 100%;
     @include font-size(20px);
     font-style: italic;
+    font-weight: 300;
 
     @include breakpoint($laptop) {
       padding: $spacing 0 $spacing 0;
@@ -91,6 +100,7 @@ iframe {
   height: auto;
   min-height: 350px;
   border: none;
+  box-shadow: 0px 2px 40px 0px #eaeaea;
   @include breakpoint($laptop) {
     width: 400px;
     height: 350px;
@@ -126,6 +136,17 @@ iframe {
 }
 
 // Forms
+
+form {
+  .button {
+    cursor: pointer;
+    &.primary {
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
 
 .form {
   margin: $spacing * 2 0;

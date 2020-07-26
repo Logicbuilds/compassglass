@@ -10,6 +10,9 @@
 
     p {
       @include font-size(16px);
+      @include breakpoint($laptop) {
+        @include font-size(18px);
+      }
     }
   }
 
@@ -23,7 +26,7 @@
 /* Accordion styles */
 
 .tabs {
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: $box-shadow-default;
 }
@@ -31,17 +34,18 @@
   width: 100%;
   color: white;
   overflow: hidden;
+  margin-bottom: $spacing;
   &-label {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: $congressblue;
+    background: darken($pigeonpost, 20%);
     @include font-size(20px);
     font-weight: bold;
     cursor: pointer;
     /* Icon */
     &:hover {
-      background: lighten($congressblue, 10%);
+      background: lighten($congressblue, 1%);
     }
     &::after {
       content: '\276F';

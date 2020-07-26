@@ -3,6 +3,8 @@ import { Button } from 'components/basic';
 
 // Images
 import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
+import { ReactComponent as IconPhoneSVG } from '../../../assets/images/icon-phone.svg';
+import { ReactComponent as IconEmailSVG } from '../../../assets/images/icon-email.svg';
 import { ReactComponent as IconExternalSVG } from '../../../assets/images/icon-external.svg';
 
 let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
@@ -115,11 +117,13 @@ export const Home: React.FC = () => {
                     Cape Town 7560
                   </address>
                   <span>
-                    <a href="mailto:+27219817785">(021) 981 7785</a>
+                    <a href="mailto:+27219817785">
+                      <IconPhoneSVG /> (021) 981 7785
+                    </a>
                   </span>
                   <span>
                     <a href="mailto:sales@compassglass.co.za">
-                      sales@compassglass.co.za
+                      <IconEmailSVG /> sales@compassglass.co.za
                     </a>
                   </span>
                 </address>
@@ -147,11 +151,13 @@ export const Home: React.FC = () => {
                     120 Fichat Street, George Industrial, George 6536
                   </address>
                   <span>
-                    <a href="mailto:+270448714321">(044) 873 5135</a>
+                    <a href="mailto:+270448714321">
+                      <IconPhoneSVG /> (044) 873 5135
+                    </a>
                   </span>
                   <span>
                     <a href="mailto:admingeorge@compassglass.co.za">
-                      admingeorge@compassglass.co.za
+                      <IconEmailSVG /> admingeorge@compassglass.co.za
                     </a>
                   </span>
                 </address>

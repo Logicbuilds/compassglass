@@ -10,16 +10,15 @@
     span,
     span a,
     address {
-      @include font-size(18px);
+      @include font-size(14px);
       font-weight: 300;
       line-height: $line-height-default;
       text-decoration: none;
       padding: 0.1rem 0;
-      display: block;
       color: $deepcerulean;
 
       @include breakpoint($laptop) {
-        @include font-size(20px);
+        @include font-size(16px);
       }
     }
 
