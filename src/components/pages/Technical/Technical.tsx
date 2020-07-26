@@ -35,52 +35,54 @@ export const Technical: React.FC<TechnicalProps> = ({ ...props }) => {
             <h2>Composition of commercial glass</h2>
             <h3>Soda lime glass</h3>
 
-            <table className="table striped">
-              <thead>
-                <tr>
-                  <th>Origin</th>
-                  <th colSpan={2}>Description</th>
-                  <th>%</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowSpan={4} className="cell-origin">
-                    Mined or Quarried Materials
-                  </td>
-                  <td>Silica</td>
-                  <td>Si</td>
-                  <td>72</td>
-                </tr>
-                <tr>
-                  <td>Limestone</td>
-                  <td>CaCO³</td>
-                  <td>9</td>
-                </tr>
-                <tr>
-                  <td>Dolomite</td>
-                  <td>CaMg(CO³)²</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>Others</td>
-                  <td>incl iron oxide *</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td className="cell-origin">Manufactured Materials</td>
-                  <td>Soda Ash</td>
-                  <td>Na²CO³</td>
-                  <td>14</td>
-                </tr>
-                <tr>
-                  <td className="cell-origin">By-Product Material</td>
-                  <td>Clean Scrap</td>
-                  <td>“Cullet”</td>
-                  <td>Up to 20% by volume</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="table-container">
+              <table className="table striped">
+                <thead>
+                  <tr>
+                    <th>Origin</th>
+                    <th colSpan={2}>Description</th>
+                    <th>%</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowSpan={4} className="cell-origin">
+                      Mined or Quarried Materials
+                    </td>
+                    <td>Silica</td>
+                    <td>Si</td>
+                    <td>72</td>
+                  </tr>
+                  <tr>
+                    <td>Limestone</td>
+                    <td>CaCO³</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>Dolomite</td>
+                    <td>CaMg(CO³)²</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>Others</td>
+                    <td>incl iron oxide *</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td className="cell-origin">Manufactured Materials</td>
+                    <td>Soda Ash</td>
+                    <td>Na²CO³</td>
+                    <td>14</td>
+                  </tr>
+                  <tr>
+                    <td className="cell-origin">By-Product Material</td>
+                    <td>Clean Scrap</td>
+                    <td>“Cullet”</td>
+                    <td>Up to 20% by volume</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <small>
               <sup>*</sup> Note: All commercial window glass contains a residue
               of iron oxide (Fe2O3 ) which is difficult and expensive to remove

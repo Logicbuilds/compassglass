@@ -192,6 +192,15 @@ form {
 
 // Tables
 
+.table-container {
+  overflow: hidden;
+  overflow-x: scroll;
+
+  @include breakpoint($laptop) {
+    overflow: visible;
+  }
+}
+
 .table {
   width: 100%;
   margin-bottom: $spacing;

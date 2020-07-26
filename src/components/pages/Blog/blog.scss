@@ -5,16 +5,22 @@
   }
   .blog-item {
     background: rgba(255, 255, 255, 0.4);
-    box-shadow: $box-shadow-cards-container;
-    padding: $spacing * 2;
+    box-shadow: $box-shadow-default;
+    padding: $spacing;
     margin: 0 0 $spacing 0;
+    @include breakpoint($laptop) {
+      padding: $spacing * 2;
+    }
     header {
       margin-bottom: $spacing;
       padding-bottom: $spacing;
       border-bottom: 1px solid $linkwater;
     }
     h2 {
-      @include font-size(35px);
+      @include font-size(25px);
+      @include breakpoint($laptop) {
+        @include font-size(35px);
+      }
       letter-spacing: -2px;
     }
     .blog-item-meta {
@@ -22,7 +28,10 @@
     }
     p {
       @include font-size(18px);
-      max-width: 60%;
+      max-width: 100%;
+      @include breakpoint($laptop) {
+        max-width: 60%;
+      }
     }
     .button {
       padding: $spacing / 2 $spacing * 1.5;
