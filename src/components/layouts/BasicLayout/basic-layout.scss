@@ -61,6 +61,13 @@
     }
   }
 
+  .card-padding-narrow {
+    padding: 40px;
+    @include breakpoint($laptop) {
+      padding: 60px 60px;
+    }
+  }
+
   h1 {
     padding-bottom: $spacing;
     line-height: $line-height-default;

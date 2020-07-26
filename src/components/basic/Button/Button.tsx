@@ -6,6 +6,7 @@ export interface ButtonProps {
   variant?: string;
   redirect: string;
   buttonClass?: string;
+  linkTarget?: string;
 }
 
 /**
@@ -15,10 +16,11 @@ export const Button: React.FC<ButtonProps> = ({
   variant,
   redirect,
   buttonClass,
+  linkTarget,
   children,
 }) => {
   return (
-    <Link className={'button ' + buttonClass} to={redirect}>
+    <Link className={'button ' + buttonClass} to={redirect} target={linkTarget}>
       {children}
     </Link>
   );
