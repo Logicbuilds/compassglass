@@ -1,1 +1,10 @@
-.technical{}
+.compass-glass-technical-information {
+  .card {
+    h2 {
+      padding: $spacing 0;
+    }
+    h3 {
+      padding: $spacing 0 $spacing * 2 0;
+    }
+  }
+}

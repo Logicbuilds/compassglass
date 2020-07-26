@@ -37,12 +37,13 @@ h2 {
 }
 
 h3 {
-  @include font-size(35px);
-  font-weight: 400;
+  @include font-size(20px);
+  font-weight: 600;
   color: $deepcerulean;
+  letter-spacing: -2.5px;
 
   @include breakpoint($laptop) {
-    @include font-size(45px);
+    @include font-size(35px);
   }
 }
 
