@@ -87,7 +87,8 @@ export const Contact: React.FC = () => {
                     )}
                     {hasError && (
                       <div className="alert alert-error">
-                        We could not send your message, please try again.
+                        Your message was not sent, please check what you entered
+                        and try again.
                       </div>
                     )}
                   </div>

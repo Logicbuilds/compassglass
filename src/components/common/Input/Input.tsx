@@ -28,7 +28,7 @@ export const Input = ({
       {type !== 'textarea' && (
         <input name={name} ref={register({ required })} type={type} />
       )}
-      {errors[name] && <p className="form-error">{label} is required.</p>}
+      {errors[name] && <p className="form-error">This field is required.</p>}
     </label>
   );
 };
