@@ -17,7 +17,7 @@ let certificationLogoASDA = require('../../../assets/images/logo-certification-a
 let certificationLogoSAGI = require('../../../assets/images/logo-certification-sagi.png');
 let certificationLogoSS = require('../../../assets/images/logo-certification-ss.png');
 
-let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Gradient-Background.png');
+let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Background-Gradient.png');
 let backgroundVideoWEBM = require('../../../assets/videos/Compass-Glass-Video.webm');
 let backgroundVideoMP4 = require('../../../assets/videos/Compass-Glass-Video.mp4');
 

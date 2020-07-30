@@ -1,6 +1,8 @@
-import React from 'react';
-
-// Images
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import * as emailjs from 'emailjs-com';
+import { contactConfig } from '../../../config';
+import { Input } from '../../common/Input';
 
 // Images
 
@@ -9,6 +11,24 @@ import { ReactComponent as IconEmailSVG } from '../../../assets/images/icon-emai
 import { ReactComponent as IconExternalSVG } from '../../../assets/images/icon-external.svg';
 
 export const Contact: React.FC = () => {
+  const [isLoading, setLoading] = useState(false);
+  const [mailSent, setMailSent] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  const { register, handleSubmit, errors } = useForm();
+
+  const onSubmit = async (data: any) => {
+    try {
+      setLoading(true);
+      const { serviceID, templateID, form, userID } = contactConfig;
+      await emailjs.sendForm(serviceID, templateID, form, userID);
+      setMailSent(true);
+      setLoading(false);
+    } catch (err) {
+      setHasError(true);
+    }
+  };
+
   return (
     <div className="section">
       <div className="page container">
@@ -18,54 +38,60 @@ export const Contact: React.FC = () => {
             <div className="grid grid-no-wrap grid-items-have-gap">
               {/* Contact Form */}
               <div className="grid-item grid-item-12 grid-item-laptop-4">
-                <form>
-                  <div className="form-group">
-                    <label htmlFor="your-name">Your Name</label>
-                    <input
-                      type="text"
-                      name="your-name"
-                      size={40}
-                      aria-required="true"
-                      aria-invalid="false"
-                      placeholder="Your Name"
-                    ></input>
+                <div className="contact-form">
+                  {!mailSent && (
+                    <form
+                      id="logicbuilds-contact-form"
+                      onSubmit={handleSubmit(onSubmit)}
+                    >
+                      <Input
+                        label="Your Name"
+                        name="name"
+                        type="text"
+                        errors={errors}
+                        register={register}
+                        required
+                      />
+                      <Input
+                        label="Your Email"
+                        name="email"
+                        type="email"
+                        errors={errors}
+                        register={register}
+                        required
+                      />
+                      <Input
+                        label="Your Message"
+                        name="message"
+                        type="textarea"
+                        errors={errors}
+                        register={register}
+                        required
+                      />
+                      <button
+                        className="button primary"
+                        type="submit"
+                        value="Send message"
+                      >
+                        {isLoading ? 'Sending...' : 'Send message'}
+                      </button>
+                    </form>
+                  )}
+                  <div>
+                    {mailSent && (
+                      <div>
+                        <h2>Message sent</h2>
+                        <p>Thank you for contacting us.</p>
+                        <p>We will be in touch soon.</p>
+                      </div>
+                    )}
+                    {hasError && (
+                      <div className="alert alert-error">
+                        We could not send your message, please try again.
+                      </div>
+                    )}
                   </div>
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address</label>
-                    <input
-                      type="email"
-                      name="email"
-                      size={40}
-                      aria-required="true"
-                      aria-invalid="false"
-                      placeholder="Email Address"
-                    ></input>
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="number">Phone Number</label>
-                    <input
-                      type="tel"
-                      name="number"
-                      size={40}
-                      aria-required="true"
-                      aria-invalid="false"
-                      placeholder="Phone Number"
-                    ></input>
-                  </div>
-                  <div className="form-group form-group-textarea">
-                    <label htmlFor="exampleFormControlTextarea1">
-                      Your Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows={3}
-                    ></textarea>
-                  </div>
-                  <button type="submit" className="button primary">
-                    Send Message
-                  </button>
-                </form>
+                </div>
               </div>
 
               <div className="grid-item grid-item-12 grid-item-laptop-7">
