@@ -1,4 +1,11 @@
 .contact-compass-glass {
+  h3 {
+    margin: $spacing 0;
+    color: $deepcerulean;
+    @include font-size(30px);
+    font-weight: $font-weight-regular;
+  }
+
   address {
     padding: 25px 0;
     font-style: normal;

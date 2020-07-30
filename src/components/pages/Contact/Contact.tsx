@@ -38,10 +38,11 @@ export const Contact: React.FC = () => {
             <div className="grid grid-no-wrap grid-items-have-gap">
               {/* Contact Form */}
               <div className="grid-item grid-item-12 grid-item-laptop-4">
+                <h3>Send us a message</h3>
                 <div className="contact-form">
                   {!mailSent && (
                     <form
-                      id="logicbuilds-contact-form"
+                      id="compassglass-contact-form"
                       onSubmit={handleSubmit(onSubmit)}
                     >
                       <Input
@@ -80,7 +81,7 @@ export const Contact: React.FC = () => {
                   <div>
                     {mailSent && (
                       <div>
-                        <h2>Message sent</h2>
+                        <h3>Message sent</h3>
                         <p>Thank you for contacting us.</p>
                         <p>We will be in touch soon.</p>
                       </div>
