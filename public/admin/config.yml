@@ -97,6 +97,7 @@ collections:
               - { name: type, label: 'Mime Type', widget: string }
   - name: pages
     label: Pages
+    delete: false
     editor:
       preview: false
     files:
@@ -104,25 +105,13 @@ collections:
         name: about
         label: About
         fields:
-          - {
-              name: title,
-              label: Title,
-              widget: string,
-              default: 'About Compass Glass',
-              required: true,
-            }
+          - { name: title, label: Title, widget: string, required: true }
           - { name: content, label: Content, widget: markdown, required: true }
       - file: public/content/pages/faqs.json
         name: faqs
         label: FAQ's
         fields:
-          - {
-              name: title,
-              label: Title,
-              widget: string,
-              default: 'Frequently Asked Questions',
-              required: true,
-            }
+          - { name: title, label: Title, widget: string, required: true }
           - name: content
             label: Content
             widget: list
@@ -139,3 +128,37 @@ collections:
                   widget: markdown,
                   required: true,
                 }
+      - file: public/content/pages/technical.json
+        name: technical
+        label: Technical
+        fields:
+          - { name: title, label: Title, widget: string, required: true }
+          - name: whatIsGlass
+            label: What is glass
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string, required: true }
+              - {
+                  name: content,
+                  label: Content,
+                  widget: string,
+                  required: true,
+                }
+          - name: compositionOfCommercialGlass
+            label: Composition of commercial glass
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string, required: true }
+              - {
+                  name: subTitle,
+                  label: Sub title,
+                  widget: string,
+                  required: true,
+                }
+            required: true
+          - {
+              name: disclaimer,
+              label: Disclaimer,
+              widget: markdown,
+              required: true,
+            }
