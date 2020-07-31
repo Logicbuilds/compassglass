@@ -19,7 +19,7 @@ export const About: React.FC = () => {
 
             <p>
               At Compass Glass we endeavor to provide our clients with
-              solution-driven products for all your glass needs and we pride
+              solution-driven products for all their glass needs and we pride
               ourselves in our offering of high quality products along with the
               best technical assistance and service at competitive rates.
               Through aggressive investment in our machines and employees, we
