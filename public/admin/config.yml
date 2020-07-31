@@ -17,6 +17,7 @@ collections:
     label: Settings
     editor:
       preview: false
+    delete: false
     files:
       - file: public/manifest.json
         name: manifest
