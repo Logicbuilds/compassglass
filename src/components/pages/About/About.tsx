@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import aboutData from 'assets/content/pages/about_compass_glass.json';
+import aboutData from 'assets/content/pages/about.json';
 
 /**
  * About compass glass

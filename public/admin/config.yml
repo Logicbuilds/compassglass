@@ -1,16 +1,16 @@
 backend:
   name: github
   branch: master
-	repo: Logicbuilds/compassglass
+  repo: Logicbuilds/compassglass
 
 media_folder: public/images
 public_folder: /images
 show_preview_links: false
 
 slug:
-  encoding: "ascii"
+  encoding: 'ascii'
   clean_accents: true
-	sanitize_replacement: "_"
+sanitize_replacement: '_'
 
 collections:
   - name: settings
@@ -20,15 +20,62 @@ collections:
         name: manifest
         label: Manifest Settings
         fields:
-          - { name: short_name, label: Short Name, widget: string, required: true }
+          - {
+              name: short_name,
+              label: Short Name,
+              widget: string,
+              required: true,
+            }
           - { name: name, label: Name, widget: string, required: true }
-          - { name: start_url, label: 'Start URL', widget: string, default: 'https://www.compassglass.co.za/', required: true }
-          - { name: url, label: 'URL', widget: string, default: 'https://www.compassglass.co.za/', required: true }
-          - { name: lang, label: 'Language', widget: string, default: 'en', required: true }
-          - { name: display, label: 'Display Type', widget: string, default: 'standalone', required: true }
-          - { name: theme_color, label: 'Theme Color', widget: string,, default: "#000000", required: true }
-          - { name: background_color, label: 'Background Color', widget: string, default: '#FFFFFF', required: true }
-          - { name: orientation, label: 'Orientation', widget: string, default: 'portrait', required: true }
+          - {
+              name: start_url,
+              label: 'Start URL',
+              widget: string,
+              default: 'https://www.compassglass.co.za/',
+              required: true,
+            }
+          - {
+              name: url,
+              label: 'URL',
+              widget: string,
+              default: 'https://www.compassglass.co.za/',
+              required: true,
+            }
+          - {
+              name: lang,
+              label: 'Language',
+              widget: string,
+              default: 'en',
+              required: true,
+            }
+          - {
+              name: display,
+              label: 'Display Type',
+              widget: string,
+              default: 'standalone',
+              required: true,
+            }
+          - {
+              name: theme_color,
+              label: 'Theme Color',
+              widget: string,
+              default: '#000000',
+              required: true,
+            }
+          - {
+              name: background_color,
+              label: 'Background Color',
+              widget: string,
+              default: '#FFFFFF',
+              required: true,
+            }
+          - {
+              name: orientation,
+              label: 'Orientation',
+              widget: string,
+              default: 'portrait',
+              required: true,
+            }
           - name: icons
             label: Icons
             widget: list
@@ -46,28 +93,45 @@ collections:
               - { name: src, label: Source, widget: string }
               - { name: sizes, label: Sizes, widget: string }
               - { name: type, label: 'Mime Type', widget: string }
-  - name: about
-    label: About
-    extension: json
-    format: json
-    label_singular: About
-    folder: public/content/pages
-    slug: '{{title}}'
-    fields:
-      - { name: title, label: Title, widget: string, default: 'About Compass Glass', required: true }
-      - { name: content, label: Content, widget: markdown, required: true }
-  - name: faq
-    label: FAQ
-    extension: json
-    format: json
-    folder: public/content/pages
-		create: true
-    fields:
-      - { name: title, label: Title, widget: string, default: 'Frequently Asked Questions', required: true }
-      - name: content
-				label: Content
-				widget: list
-				fields:
-					- { name: question, label: Question, widget: string, required: true }
-					- { name: answer, label: Answer, widget: markdown, required: true }
-				required: true
+  - name: pages
+    label: Pages
+    files:
+      - file: public/pages/about.json
+        name: about
+        label: About
+        fields:
+          - {
+              name: title,
+              label: Title,
+              widget: string,
+              default: 'About Compass Glass',
+              required: true,
+            }
+          - { name: content, label: Content, widget: markdown, required: true }
+      - file: public/pages/faqs.json
+        name: faqs
+        label: FAQ's
+        fields:
+          - {
+              name: title,
+              label: Title,
+              widget: string,
+              default: 'Frequently Asked Questions',
+              required: true,
+            }
+          - name: content
+            label: Content
+            widget: list
+            fields:
+              - {
+                  name: question,
+                  label: Question,
+                  widget: string,
+                  required: true,
+                }
+              - {
+                  name: answer,
+                  label: Answer,
+                  widget: markdown,
+                  required: true,
+                }
