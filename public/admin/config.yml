@@ -156,6 +156,46 @@ collections:
                   widget: string,
                   required: true,
                 }
+              - name: content
+                label: Content
+                widget: list
+                fields:
+                  - {
+                      name: origin,
+                      label: Origin,
+                      widget: string,
+                      required: true,
+                    }
+                  - name: data
+                    label: Data
+                    widget: list
+                    fields:
+                      - name: description
+                        label: Description
+                        widget: object
+                        equired: true
+                        fields:
+                          - {
+                              name: value1,
+                              label: Column 1 Value,
+                              widget: string,
+                              required: true,
+                            }
+                          - {
+                              name: value2,
+                              label: Column 2 Value,
+                              widget: string,
+                              required: true,
+                            }
+                      - {
+                          name: percentage,
+                          label: Percentage,
+                          widget: string,
+                          required: true,
+                        }
+                    allow_add: true
+                    required: true
+                required: true
             required: true
           - {
               name: disclaimer,

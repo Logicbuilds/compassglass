@@ -9,63 +9,59 @@
     "subTitle": "Soda lime glass",
     "content": [
       {
-        "gridData": [
+        "origin": "Mined or Quarried Materials",
+        "data": [
           {
-            "origin": "Mined or Quarried Materials",
-            "data": [
-              {
-                "description": {
-                  "value1": "Silica",
-                  "value2": "Si"
-                },
-                "percentage": "72"
-              },
-              {
-                "description": {
-                  "value1": "Limestone",
-                  "value2": "CaCO³"
-                },
-                "percentage": "9"
-              },
-              {
-                "description": {
-                  "value1": "Dolomite",
-                  "value2": "CaMg(CO³)²"
-                },
-                "percentage": "4"
-              },
-              {
-                "description": {
-                  "value1": "Others",
-                  "value2": "incl iron oxide *"
-                },
-                "percentage": "1"
-              }
-            ]
+            "description": {
+              "value1": "Silica",
+              "value2": "Si"
+            },
+            "percentage": "72"
           },
           {
-            "origin": "Manufactured Materials",
-            "data": [
-              {
-                "description": {
-                  "value1": "Soda Ash",
-                  "value2": "Na²CO³"
-                },
-                "percentage": "14"
-              }
-            ]
+            "description": {
+              "value1": "Limestone",
+              "value2": "CaCO³"
+            },
+            "percentage": "9"
           },
           {
-            "origin": "By-Product Material",
-            "data": [
-              {
-                "description": {
-                  "value1": "Clean Scrap",
-                  "value2": "“Cullet”"
-                },
-                "percentage": "Up to 20% by volume"
-              }
-            ]
+            "description": {
+              "value1": "Dolomite",
+              "value2": "CaMg(CO³)²"
+            },
+            "percentage": "4"
+          },
+          {
+            "description": {
+              "value1": "Others",
+              "value2": "incl iron oxide *"
+            },
+            "percentage": "1"
+          }
+        ]
+      },
+      {
+        "origin": "Manufactured Materials",
+        "data": [
+          {
+            "description": {
+              "value1": "Soda Ash",
+              "value2": "Na²CO³"
+            },
+            "percentage": "14"
+          }
+        ]
+      },
+      {
+        "origin": "By-Product Material",
+        "data": [
+          {
+            "description": {
+              "value1": "Clean Scrap",
+              "value2": "“Cullet”"
+            },
+            "percentage": "Up to 20% by volume"
           }
         ]
       }
