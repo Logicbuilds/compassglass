@@ -7,67 +7,65 @@
   "compositionOfCommercialGlass": {
     "title": "Composition of commercial glass",
     "subTitle": "Soda lime glass",
-    "content": {
-      "gridData": [
-        {
-          "origin": "Mined or Quarried Materials",
-          "data": [
-            {
-              "description": {
-                "value1": "Silica",
-                "value2": "Si"
-              },
-              "percentage": "72"
+    "content": [
+      {
+        "origin": "Mined or Quarried Materials",
+        "data": [
+          {
+            "description": {
+              "value1": "Silica",
+              "value2": "Si"
             },
-            {
-              "description": {
-                "value1": "Limestone",
-                "value2": "CaCO³"
-              },
-              "percentage": "9"
+            "percentage": "72"
+          },
+          {
+            "description": {
+              "value1": "Limestone",
+              "value2": "CaCO³"
             },
-            {
-              "description": {
-                "value1": "Dolomite",
-                "value2": "CaMg(CO³)²"
-              },
-              "percentage": "4"
+            "percentage": "9"
+          },
+          {
+            "description": {
+              "value1": "Dolomite",
+              "value2": "CaMg(CO³)²"
             },
-            {
-              "description": {
-                "value1": "Others",
-                "value2": "incl iron oxide *"
-              },
-              "percentage": "1"
-            }
-          ]
-        },
-        {
-          "origin": "Manufactured Materials",
-          "data": [
-            {
-              "description": {
-                "value1": "Soda Ash",
-                "value2": "Na²CO³"
-              },
-              "percentage": "14"
-            }
-          ]
-        },
-        {
-          "origin": "By-Product Material",
-          "data": [
-            {
-              "description": {
-                "value1": "Clean Scrap",
-                "value2": "“Cullet”"
-              },
-              "percentage": "Up to 20% by volume"
-            }
-          ]
-        }
-      ]
-    }
+            "percentage": "4"
+          },
+          {
+            "description": {
+              "value1": "Others",
+              "value2": "incl iron oxide *"
+            },
+            "percentage": "1"
+          }
+        ]
+      },
+      {
+        "origin": "Manufactured Materials",
+        "data": [
+          {
+            "description": {
+              "value1": "Soda Ash",
+              "value2": "Na²CO³"
+            },
+            "percentage": "14"
+          }
+        ]
+      },
+      {
+        "origin": "By-Product Material",
+        "data": [
+          {
+            "description": {
+              "value1": "Clean Scrap",
+              "value2": "“Cullet”"
+            },
+            "percentage": "Up to 20% by volume"
+          }
+        ]
+      }
+    ]
   },
   "disclaimer": "\\* Note: All commercial window glass contains a residue of iron oxide (Fe2O3 ) which is difficult and expensive to remove and gives the glass it’s characteristic green edge-colour which is considered acceptable for most glazing applications, including mirrors. However, to meet the demand for a “whiter” architectural window glass, it is possible to remove most of the residual iron by further processing and additional cost to create Low-Iron (“Extra-Clear”) glass which is almost perfectly white with no green colour at the edges. The clarity and high light-transmission characteristics of “Low-Iron” glass make it a highly popular glazing-choice for a wide variety of applications in Retail and Commercial buildings."
 }
