@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b3f8148f-5539-402d-9ddd-5be29ae06b83/deploy-status)](https://app.netlify.com/sites/compass-glass/deploys)
 
 ## Available Scripts
 

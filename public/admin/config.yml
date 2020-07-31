@@ -1,8 +1,8 @@
 backend:
   # name: test-repo
   name: github
-  branch: develop
-  repo: steffven/stephanusventer.dev
+  branch: master
+  repo: Logicbuilds/compassglass
 media_folder: public/images
 public_folder: /images
 show_preview_links: false
@@ -20,8 +20,8 @@ collections:
         fields:
           - { name: short_name, label: Short Name, widget: string, required: true }
           - { name: name, label: Name, widget: string, required: true }
-          - { name: start_url, label: 'Start URL', widget: string, default: 'https://www.stephanusventer.dev/', required: true }
-          - { name: url, label: 'URL', widget: string, default: 'https://www.stephanusventer.dev/', required: true }
+          - { name: start_url, label: 'Start URL', widget: string, default: 'https://www.compassglass.co.za/', required: true }
+          - { name: url, label: 'URL', widget: string, default: 'https://www.compassglass.co.za/', required: true }
           - { name: lang, label: 'Language', widget: string, default: 'en', required: true }
           - { name: display, label: 'Display Type', widget: string, default: 'standalone', required: true }
           - { name: theme_color, label: 'Theme Color', widget: string,, default: "#000000", required: true }
@@ -44,29 +44,3 @@ collections:
               - { name: src, label: Source, widget: string }
               - { name: sizes, label: Sizes, widget: string }
               - { name: type, label: 'Mime Type', widget: string }
-  - name: pages
-    label: Pages
-    extension: json
-    format: json
-    label_singular: Page
-    folder: public/content/pages
-    slug: '{{name}}-{{title}}'
-    create: true
-    fields:
-      - { name: name, label: Name, widget: string, required: true }
-      - { name: title, label: title, widget: string, default: 'software engineer', required: true }
-      - name: socialLinks
-        label: 'Social Links'
-        widget: list
-        fields:
-          - { name: link, label: Link, widget: string, required: true }
-          - { label: Platform, name: platform, widget: select, options: ['github', 'linkedIn', 'twitter'], required: true }
-        allow_add: true
-      - name: tech
-        label: 'Tech'
-        widget: list
-        fields:
-          - name: name
-            label: Name
-            widget: string
-        allow_add: true
