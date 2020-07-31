@@ -15,6 +15,8 @@ sanitize_replacement: '_'
 collections:
   - name: settings
     label: Settings
+    editor:
+      preview: false
     files:
       - file: public/manifest.json
         name: manifest
@@ -95,8 +97,10 @@ collections:
               - { name: type, label: 'Mime Type', widget: string }
   - name: pages
     label: Pages
+    editor:
+      preview: false
     files:
-      - file: public/pages/about.json
+      - file: public/content/pages/about.json
         name: about
         label: About
         fields:
@@ -108,7 +112,7 @@ collections:
               required: true,
             }
           - { name: content, label: Content, widget: markdown, required: true }
-      - file: public/pages/faqs.json
+      - file: public/content/pages/faqs.json
         name: faqs
         label: FAQ's
         fields:
