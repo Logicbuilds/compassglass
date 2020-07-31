@@ -1,14 +1,9 @@
 import React from 'react';
 
-export interface AboutProps {
-  /** Example About property. */
-  exampleAbout?: string;
-}
-
 /**
  * About compass glass
  */
-export const About: React.FC<AboutProps> = ({ ...props }) => {
+export const About: React.FC = () => {
   return (
     <div className="section">
       <div className="page container">
