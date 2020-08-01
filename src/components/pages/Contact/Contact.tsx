@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
 import { contactConfig } from 'application/config';
-import { Input } from 'components/common/Input';
+import { Input } from 'components/common';
 
 // Images
 
@@ -137,7 +137,7 @@ export const Contact: React.FC = () => {
                 </div>
 
                 {/* Compass Glass - George */}
-                <div className="grid  grid-no-wrap">
+                <div className="grid grid-no-wrap">
                   <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
                     <address>
                       <h5>Compass Glass - George</h5>

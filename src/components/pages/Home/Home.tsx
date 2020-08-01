@@ -31,7 +31,7 @@ export const Home: React.FC = () => {
               poster={backgroundVideoPoster}
             >
               <source
-                src={require('assets/videos/Compass-Glass-Video.webem')}
+                src={require('assets/videos/Compass-Glass-Video.webm')}
                 type="video/webm"
               />
               <source
