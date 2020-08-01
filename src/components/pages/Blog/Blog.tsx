@@ -33,7 +33,7 @@ export const Blog: React.FC<BlogProps> = ({ ...props }) => {
                   </p>
                   <p>
                     <Button
-                      redirect="/brochure-compass-glass-envirotherm.pdf"
+                      redirect="/static/media/brochure-compass-glass-envirotherm.pdf"
                       buttonClass=""
                       linkTarget="_blank"
                     >
@@ -58,7 +58,7 @@ export const Blog: React.FC<BlogProps> = ({ ...props }) => {
                   </p>
                   <p>
                     <Button
-                      redirect="/brochure-compass-glass-envirosol.pdf"
+                      redirect="/static/media/brochure-compass-glass-envirosol.pdf"
                       buttonClass=""
                       linkTarget="_blank"
                     >
@@ -82,7 +82,7 @@ export const Blog: React.FC<BlogProps> = ({ ...props }) => {
                   </p>
                   <p>
                     <Button
-                      redirect="/brochure-compass-glass-envirocoat.pdf"
+                      redirect="/static/media/brochure-compass-glass-envirocoat.pdf"
                       buttonClass=""
                       linkTarget="_blank"
                     >

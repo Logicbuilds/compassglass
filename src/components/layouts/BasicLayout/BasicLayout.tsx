@@ -12,7 +12,7 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
   return (
     //  basic-layout layout-aside layout-landing
     <div
-      className={`basic-layout layout-landing animated fadeIn slower ${paramCase(
+      className={`layout-columns basic-layout layout-landing ${paramCase(
         headMeta.title
       )}`}
     >
@@ -25,7 +25,7 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
       <Headroom>
         <Header />
       </Headroom>
-      <div className="layout-columns">
+      <div className="animated fadeIn slower">
         {children}
         <Footer />
       </div>

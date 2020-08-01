@@ -3,8 +3,8 @@ backend:
   branch: master
   repo: Logicbuilds/compassglass
 
-media_folder: public/images
-public_folder: /images
+media_folder: public/content/media
+public_folder: /content/media
 show_preview_links: false
 
 slug:
@@ -34,14 +34,14 @@ collections:
               name: start_url,
               label: 'Start URL',
               widget: string,
-              default: 'https://www.compassglass.co.za/',
+              default: 'https://compassglass.co.za/',
               required: true,
             }
           - {
               name: url,
               label: 'URL',
               widget: string,
-              default: 'https://www.compassglass.co.za/',
+              default: 'https://compassglass.co.za/',
               required: true,
             }
           - {

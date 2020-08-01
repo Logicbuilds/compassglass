@@ -3,17 +3,17 @@
   "name": "Compass Glass South Africa",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "static/media/favicon.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "android-chrome-192x192.png",
+      "src": "static/media/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "android-chrome-512x512.png",
+      "src": "static/media/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
