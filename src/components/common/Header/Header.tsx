@@ -3,8 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 // Images
 
-// import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
-import { ReactComponent as CompassGlassLogoTextSVG } from '../../../assets/images/Compass-Glass-Logo-Text.svg';
+// import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
+import { ReactComponent as CompassGlassLogoTextSVG } from 'assets/images/Compass-Glass-Logo-Text.svg';
 
 export interface HeaderProps {
   /** Example Header property. */

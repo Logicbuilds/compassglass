@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import * as emailjs from 'emailjs-com';
-import { contactConfig } from '../../../config';
-import { Input } from '../../common/Input';
+import emailjs from 'emailjs-com';
+
+import { contactConfig } from 'application/config';
+import { Input } from 'components/common/Input';
 
 // Images
 
-import { ReactComponent as IconPhoneSVG } from '../../../assets/images/icon-phone.svg';
-import { ReactComponent as IconEmailSVG } from '../../../assets/images/icon-email.svg';
-import { ReactComponent as IconExternalSVG } from '../../../assets/images/icon-external.svg';
+import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
+import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
+import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
 
 export const Contact: React.FC = () => {
   const [isLoading, setLoading] = useState(false);

@@ -2,24 +2,20 @@ import React from 'react';
 import { Button } from 'components/basic';
 
 // Images
-import { ReactComponent as CompassGlassLogoSVG } from '../../../assets/images/Compass-Glass-Logo.svg';
-import { ReactComponent as IconPhoneSVG } from '../../../assets/images/icon-phone.svg';
-import { ReactComponent as IconEmailSVG } from '../../../assets/images/icon-email.svg';
-import { ReactComponent as IconExternalSVG } from '../../../assets/images/icon-external.svg';
+import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
+import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
+import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
+import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
 
-let imageWeKnowGlass = require('../../../assets/images/Compass-Glass-We-Know-Glass.jpg');
-let imageGlassBenefits = require('../../../assets/images/Compass-Glass-Glass-Benefits.jpg');
-
-let certificationLogoSAGGA = require('../../../assets/images/logo-certification-sagga.png');
-let certificationLogoGGF = require('../../../assets/images/logo-certification-ggf.png');
-let certificationLogoSABS = require('../../../assets/images/logo-certification-sabs.png');
-let certificationLogoASDA = require('../../../assets/images/logo-certification-asda.png');
-let certificationLogoSAGI = require('../../../assets/images/logo-certification-sagi.png');
-let certificationLogoSS = require('../../../assets/images/logo-certification-ss.png');
-
-let backgroundVideoPoster = require('../../../assets/images/Compass-Glass-Background-Gradient.png');
-let backgroundVideoWEBM = require('../../../assets/videos/Compass-Glass-Video.webm');
-let backgroundVideoMP4 = require('../../../assets/videos/Compass-Glass-Video.mp4');
+import imageWeKnowGlass from 'assets/images/Compass-Glass-We-Know-Glass.jpg';
+import imageGlassBenefits from 'assets/images/Compass-Glass-Glass-Benefits.jpg';
+import certificationLogoSAGGA from 'assets/images/logo-certification-sagga.png';
+import certificationLogoGGF from 'assets/images/logo-certification-ggf.png';
+import certificationLogoSABS from 'assets/images/logo-certification-sabs.png';
+import certificationLogoASDA from 'assets/images/logo-certification-asda.png';
+import certificationLogoSAGI from 'assets/images/logo-certification-sagi.png';
+import certificationLogoSS from 'assets/images/logo-certification-ss.png';
+import backgroundVideoPoster from 'assets/images/Compass-Glass-Background-Gradient.png';
 
 export const Home: React.FC = () => {
   return (
@@ -34,8 +30,14 @@ export const Home: React.FC = () => {
               loop
               poster={backgroundVideoPoster}
             >
-              <source src={backgroundVideoWEBM} type="video/webm" />
-              <source src={backgroundVideoMP4} type="video/mp4" />
+              <source
+                src={require('assets/videos/Compass-Glass-Video.webem')}
+                type="video/webm"
+              />
+              <source
+                src={require('assets/videos/Compass-Glass-Video.mp4')}
+                type="video/mp4"
+              />
             </video>
           </div>
           <div className="grid">
@@ -60,12 +62,12 @@ export const Home: React.FC = () => {
         <div className="cards-container glass frosted-glass">
           {/* Card */}
           <div className="card certifications-logos">
-            <img src={certificationLogoSAGGA} alt="" />
-            <img src={certificationLogoGGF} alt="" />
-            <img src={certificationLogoSABS} alt="" />
-            <img src={certificationLogoASDA} alt="" />
-            <img src={certificationLogoSAGI} alt="" />
-            <img src={certificationLogoSS} alt="" />
+            <img src={certificationLogoSAGGA} alt="certificationLogoSAGGA" />
+            <img src={certificationLogoGGF} alt="certificationLogoGGF" />
+            <img src={certificationLogoSABS} alt="certificationLogoSABS" />
+            <img src={certificationLogoASDA} alt="certificationLogoASDA" />
+            <img src={certificationLogoSAGI} alt="certificationLogoSAGI" />
+            <img src={certificationLogoSS} alt="certificationLogoSS" />
           </div>
           {/* Card */}
           <div className="card card-padding-default">

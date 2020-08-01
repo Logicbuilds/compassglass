@@ -2,9 +2,9 @@ import React from 'react';
 
 // Images
 
-import { ReactComponent as IconFacebookSVG } from '../../../assets/images/icon-facebook.svg';
-import { ReactComponent as IconTwitterSVG } from '../../../assets/images/icon-twitter.svg';
-import { ReactComponent as IconLinkedInSVG } from '../../../assets/images/icon-linkedin.svg';
+import { ReactComponent as IconFacebookSVG } from 'assets/images/icon-facebook.svg';
+import { ReactComponent as IconTwitterSVG } from 'assets/images/icon-twitter.svg';
+import { ReactComponent as IconLinkedInSVG } from 'assets/images/icon-linkedin.svg';
 
 export interface FooterProps {
   /** Example Footer property. */
