@@ -30,25 +30,22 @@ export const Technical: React.FC = () => {
                 </thead>
                 <tbody>
                   {techData.compositionOfCommercialGlass.content.map(
-                    (row, idx) => (
-                      <React.Fragment>
-                        {row.data.map((item, itemIdx) => (
-                          <tr>
-                            {itemIdx === 0 && (
-                              <td
-                                rowSpan={row.data.length}
-                                className="cell-origin"
-                              >
-                                {row.origin}
-                              </td>
-                            )}
-                            <td>{item.description.value1}</td>
-                            <td>{item.description.value2}</td>
-                            <td>{item.percentage}</td>
-                          </tr>
-                        ))}
-                      </React.Fragment>
-                    )
+                    (row, idx) =>
+                      row.data.map((item, itemIdx) => (
+                        <tr key={`row-${idx}-${itemIdx}`}>
+                          {itemIdx === 0 && (
+                            <td
+                              rowSpan={row.data.length}
+                              className="cell-origin"
+                            >
+                              {row.origin}
+                            </td>
+                          )}
+                          <td>{item.description.value1}</td>
+                          <td>{item.description.value2}</td>
+                          <td>{item.percentage}</td>
+                        </tr>
+                      ))
                   )}
                 </tbody>
               </table>

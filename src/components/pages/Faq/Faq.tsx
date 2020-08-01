@@ -17,7 +17,7 @@ export const Faq: React.FC = () => {
               {/* Accordion */}
               <div className="tabs">
                 {faqData.content.map((faq, idx) => (
-                  <div className="tab">
+                  <div key={`faq${idx + 1}`} className="tab">
                     {/* Accordion Tab */}
                     <input type="checkbox" id={`faq${idx + 1}`} />
                     <label className="tab-label" htmlFor={`faq${idx + 1}`}>
