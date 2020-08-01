@@ -11,7 +11,7 @@ import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
 import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
 import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
 
-export const Contact: React.FC = () => {
+export const Contact: React.FC = (props) => {
   const [isLoading, setLoading] = useState(false);
   const [mailSent, setMailSent] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -29,6 +29,8 @@ export const Contact: React.FC = () => {
       setHasError(true);
     }
   };
+
+  if (!window.location.pathname.includes('contact')) return null;
 
   return (
     <div className="section">
