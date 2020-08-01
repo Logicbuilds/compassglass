@@ -3,17 +3,17 @@
   "name": "Compass Glass South Africa",
   "icons": [
     {
-      "src": "static/media/favicon.ico",
+      "src": "/static/media/favicon.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "static/media/android-chrome-192x192.png",
+      "src": "/static/media/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "static/media/android-chrome-512x512.png",
+      "src": "/static/media/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -21,5 +21,9 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "url": "https://test.compassglass.co.za/",
+  "lang": "",
+  "screenshots": [],
+  "orientation": "portrait"
 }
