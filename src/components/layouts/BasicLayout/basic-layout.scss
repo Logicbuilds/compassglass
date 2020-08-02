@@ -17,23 +17,6 @@
     animation-fill-mode: none;
     animation-duration: 0ms;
 
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(255, 255, 255, 0.6) 20%,
-      #fff 60%
-    );
-
-    @include breakpoint($laptop) {
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(255, 255, 255, 0.9) 20%,
-        #fff 25%
-      );
-      height: auto;
-    }
-
     .card {
       p {
         @include breakpoint($laptop) {

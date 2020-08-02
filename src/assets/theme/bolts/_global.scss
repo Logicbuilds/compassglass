@@ -25,7 +25,8 @@ body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $blacksqueeze;
+  background: $blacksqueeze
+    url('../../images/Compass-Glass-Background-Gradient.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

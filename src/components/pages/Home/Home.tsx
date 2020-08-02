@@ -23,24 +23,6 @@ export const Home: React.FC = () => {
     <div className="section home-section">
       <div className="home container">
         <div className="hero">
-          {/* <div className="video-wrapper">
-            <video
-              playsInline
-              autoPlay
-              muted
-              loop
-              poster={backgroundVideoPoster}
-            >
-              <source
-                src={require('assets/videos/Compass-Glass-Video.webm')}
-                type="video/webm"
-              />
-              <source
-                src={require('assets/videos/Compass-Glass-Video.mp4')}
-                type="video/mp4"
-              />
-            </video>
-          </div> */}
           <div className="grid">
             <div className="grid-item grid-item-laptop-3">
               <h1 className="logo">
