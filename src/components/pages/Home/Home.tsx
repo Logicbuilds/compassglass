@@ -131,7 +131,6 @@ export const Home: React.FC = () => {
                     </a>
                   </span>
                 </address>
-
                 <p>
                   <a href="/" className="text-decoration-none link-with-icon">
                     <IconExternalSVG /> Get directions

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+
+import { camelCase } from 'change-case';
+import { useForm } from 'react-hook-form';
 
 import { CONTACT_CONFIG } from 'application/config';
 import { Input, MapFrame } from 'components/common';
-
+import contactData from 'assets/content/pages/contact.json';
 // Images
 
 import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
@@ -31,7 +33,7 @@ export const Contact: React.FC = (props) => {
   };
 
   if (!window.location.pathname.includes('contact')) return null;
-
+  const { content } = contactData;
   return (
     <div className="section">
       <div className="page container">
@@ -101,72 +103,39 @@ export const Contact: React.FC = (props) => {
 
               <div className="grid-item grid-item-12 grid-item-laptop-7">
                 {/* Compass Glass - Cape Town */}
-                <div className="grid grid-no-wrap">
-                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
-                    <address>
-                      <h5>Compass Glass - Cape Town</h5>
+                {content.map((branch) => (
+                  <div key={branch.phone} className="grid grid-no-wrap">
+                    <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
                       <address>
-                        Unit A6, Brackenrite Business Park, Kruis Road,
-                        Brackenfell, Cape Town 7560
+                        <h5>Compass Glass - {branch.title}</h5>
+                        <address>{branch.address}</address>
+                        <span>
+                          <a href={`mailto:${branch.phone}`}>
+                            <IconPhoneSVG /> {branch.phone}
+                          </a>
+                        </span>
+                        <span>
+                          <a href="mailto:sales@compassglass.co.za">
+                            <IconEmailSVG /> {branch.email}
+                          </a>
+                        </span>
                       </address>
-                      <span>
-                        <a href="mailto:+27219817785">
-                          <IconPhoneSVG /> (021) 981 7785
+                      <p>
+                        <a
+                          href={branch.directions}
+                          className="text-decoration-none link-with-icon"
+                        >
+                          <IconExternalSVG /> Get directions
                         </a>
-                      </span>
-                      <span>
-                        <a href="mailto:sales@compassglass.co.za">
-                          <IconEmailSVG /> sales@compassglass.co.za
-                        </a>
-                      </span>
-                    </address>
-                    <p>
-                      <a
-                        href="/"
-                        className="text-decoration-none link-with-icon"
-                      >
-                        <IconExternalSVG /> Get directions
-                      </a>
-                    </p>
+                      </p>
+                    </div>
+                    <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
+                      <MapFrame
+                        city={camelCase(branch.title) as 'capeTown' | 'george'}
+                      />
+                    </div>
                   </div>
-                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                    <MapFrame city="capeTown" />
-                  </div>
-                </div>
-
-                {/* Compass Glass - George */}
-                <div className="grid grid-no-wrap">
-                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
-                    <address>
-                      <h5>Compass Glass - George</h5>
-                      <address>
-                        120 Fichat Street, George Industrial, George 6536
-                      </address>
-                      <span>
-                        <a href="mailto:+270448714321">
-                          <IconPhoneSVG /> (044) 873 5135
-                        </a>
-                      </span>
-                      <span>
-                        <a href="mailto:admingeorge@compassglass.co.za">
-                          <IconEmailSVG /> admingeorge@compassglass.co.za
-                        </a>
-                      </span>
-                    </address>
-
-                    <p>
-                      <a
-                        href="/"
-                        className="text-decoration-none link-with-icon"
-                      >
-                        <IconExternalSVG /> Get directions
-                      </a>
-                    </p>
-                  </div>
-                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                    <MapFrame city="george" />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
