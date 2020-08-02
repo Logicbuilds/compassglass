@@ -16,14 +16,14 @@ import certificationLogoSABS from 'assets/images/logo-certification-sabs.png';
 import certificationLogoASDA from 'assets/images/logo-certification-asda.png';
 import certificationLogoSAGI from 'assets/images/logo-certification-sagi.png';
 import certificationLogoSS from 'assets/images/logo-certification-ss.png';
-import backgroundVideoPoster from 'assets/images/Compass-Glass-Background-Gradient.png';
+// import backgroundVideoPoster from 'assets/images/Compass-Glass-Background-Gradient.png';
 
 export const Home: React.FC = () => {
   return (
     <div className="section home-section">
       <div className="home container">
         <div className="hero">
-          <div className="video-wrapper">
+          {/* <div className="video-wrapper">
             <video
               playsInline
               autoPlay
@@ -40,7 +40,7 @@ export const Home: React.FC = () => {
                 type="video/mp4"
               />
             </video>
-          </div>
+          </div> */}
           <div className="grid">
             <div className="grid-item grid-item-laptop-3">
               <h1 className="logo">

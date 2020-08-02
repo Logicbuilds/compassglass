@@ -19,6 +19,7 @@
     "react-scripts": "3.4.1",
     "react-toast-notifications": "^2.4.0",
     "recoil": "^0.0.7",
+    "rgm": "^0.1.1",
     "uuidv4": "^6.0.8"
   },
   "scripts": {
