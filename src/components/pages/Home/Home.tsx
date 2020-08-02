@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'components/basic';
+import { MapFrame } from 'components/common';
 
 // Images
 import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
@@ -138,11 +139,7 @@ export const Home: React.FC = () => {
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <iframe
-                  title="Compass Glass Cape Town"
-                  src="https://snazzymaps.com/embed/242336"
-                  frameBorder="none"
-                ></iframe>
+                <MapFrame city="capeTown" />
               </div>
             </div>
 
@@ -172,11 +169,7 @@ export const Home: React.FC = () => {
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <iframe
-                  title="Compass Glass George"
-                  src="https://snazzymaps.com/embed/246367"
-                  frameBorder="none"
-                ></iframe>
+                <MapFrame city="george" />
               </div>
             </div>
           </div>

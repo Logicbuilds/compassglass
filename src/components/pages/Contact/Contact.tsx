@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
-import { contactConfig } from 'application/config';
-import { Input } from 'components/common';
+import { CONTACT_CONFIG } from 'application/config';
+import { Input, MapFrame } from 'components/common';
 
 // Images
 
@@ -21,7 +21,7 @@ export const Contact: React.FC = (props) => {
   const onSubmit = async (data: any) => {
     try {
       setLoading(true);
-      const { serviceID, templateID, form, userID } = contactConfig;
+      const { serviceID, templateID, form, userID } = CONTACT_CONFIG;
       await emailjs.sendForm(serviceID, templateID, form, userID);
       setMailSent(true);
       setLoading(false);
@@ -130,11 +130,7 @@ export const Contact: React.FC = (props) => {
                     </p>
                   </div>
                   <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                    <iframe
-                      title="Compass Glass Cape Town"
-                      src="https://snazzymaps.com/embed/242336"
-                      frameBorder="none"
-                    ></iframe>
+                    <MapFrame city="capeTown" />
                   </div>
                 </div>
 
@@ -168,11 +164,7 @@ export const Contact: React.FC = (props) => {
                     </p>
                   </div>
                   <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                    <iframe
-                      title="Compass Glass George"
-                      src="https://snazzymaps.com/embed/246367"
-                      frameBorder="none"
-                    ></iframe>
+                    <MapFrame city="george" />
                   </div>
                 </div>
               </div>
