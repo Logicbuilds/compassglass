@@ -102,12 +102,22 @@ collections:
     editor:
       preview: false
     files:
+      - file: public/content/pages/home.json
+        name: home
+        label: Home
+        fields:
+          - name: content
+            label: Content
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string, required: true }
+              - { name: body, label: Body, widget: markdown, required: true }
       - file: public/content/pages/about.json
         name: about
         label: About
         fields:
           - { name: title, label: Title, widget: string, required: true }
-          - { name: content, label: Content, widget: markdown, required: true }
+          - { name: content, label: Content, widget: string, required: true }
       - file: public/content/pages/faqs.json
         name: faqs
         label: FAQ's
@@ -203,3 +213,26 @@ collections:
               widget: markdown,
               required: true,
             }
+      - file: public/content/pages/contact.json
+        name: contact
+        label: Contact
+        fields:
+          - name: content
+            label: Content
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string, required: true }
+              - {
+                  name: address,
+                  label: Address,
+                  widget: string,
+                  required: true,
+                }
+              - { name: phone, label: Phone, widget: string, required: true }
+              - { name: email, label: Email, widget: string, required: true }
+              - {
+                  name: directions,
+                  label: Directions,
+                  widget: string,
+                  required: true,
+                }
