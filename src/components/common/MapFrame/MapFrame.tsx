@@ -10,6 +10,7 @@ export interface MapFrameProps {
  * Google map embed
  */
 export const MapFrame: React.FC<MapFrameProps> = ({ city }) => {
+  console.log(city);
   const { title, src } = GOOGLE_MAP_CONFIGS[city];
   return (
     <div className="map-frame">

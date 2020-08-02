@@ -107,7 +107,7 @@ export const Contact: React.FC = (props) => {
                   <div key={branch.phone} className="grid grid-no-wrap">
                     <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
                       <address>
-                        <h5>{branch.title}</h5>
+                        <h5>Compass Glass - {branch.title}</h5>
                         <address>{branch.address}</address>
                         <span>
                           <a href={`mailto:${branch.phone}`}>
