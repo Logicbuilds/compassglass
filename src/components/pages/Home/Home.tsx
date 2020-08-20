@@ -10,12 +10,12 @@ import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.s
 
 import imageWeKnowGlass from 'assets/images/Compass-Glass-We-Know-Glass.jpg';
 import imageGlassBenefits from 'assets/images/Compass-Glass-Glass-Benefits.jpg';
-import certificationLogoSAGGA from 'assets/images/logo-certification-sagga.png';
-import certificationLogoGGF from 'assets/images/logo-certification-ggf.png';
-import certificationLogoSABS from 'assets/images/logo-certification-sabs.png';
-import certificationLogoASDA from 'assets/images/logo-certification-asda.png';
-import certificationLogoSAGI from 'assets/images/logo-certification-sagi.png';
-import certificationLogoSS from 'assets/images/logo-certification-ss.png';
+// import certificationLogoSAGGA from 'assets/images/logo-certification-sagga.png';
+// import certificationLogoGGF from 'assets/images/logo-certification-ggf.png';
+// import certificationLogoSABS from 'assets/images/logo-certification-sabs.png';
+// import certificationLogoASDA from 'assets/images/logo-certification-asda.png';
+// import certificationLogoSAGI from 'assets/images/logo-certification-sagi.png';
+// import certificationLogoSS from 'assets/images/logo-certification-ss.png';
 // import backgroundVideoPoster from 'assets/images/Compass-Glass-Background-Gradient.png';
 
 export const Home: React.FC = () => {
@@ -44,14 +44,14 @@ export const Home: React.FC = () => {
         </div>
         <div className="cards-container glass frosted-glass">
           {/* Card */}
-          <div className="card certifications-logos">
+          {/* <div className="card certifications-logos">
             <img src={certificationLogoSAGGA} alt="certificationLogoSAGGA" />
             <img src={certificationLogoGGF} alt="certificationLogoGGF" />
             <img src={certificationLogoSABS} alt="certificationLogoSABS" />
             <img src={certificationLogoASDA} alt="certificationLogoASDA" />
             <img src={certificationLogoSAGI} alt="certificationLogoSAGI" />
             <img src={certificationLogoSS} alt="certificationLogoSS" />
-          </div>
+          </div> */}
           {/* Card */}
           <div className="card card-padding-default">
             <div className="grid">
