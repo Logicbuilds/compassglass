@@ -21,6 +21,7 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
         <div className="flex nav-container container">
           <h1 className="logo">
             <Link to="/">
+              <span className="sr-only">Compass Glass</span>
               <CompassGlassLogoTextSVG />
             </Link>
           </h1>

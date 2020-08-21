@@ -97,7 +97,7 @@ export const Home: React.FC = () => {
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <address>
-                  <h4>Compass Glass - Cape Town</h4>
+                  <h3>Compass Glass - Cape Town</h3>
                   <address>
                     Unit A6, Brackenrite Business Park, Kruis Road, Brackenfell,
                     Cape Town 7560
@@ -127,7 +127,7 @@ export const Home: React.FC = () => {
             <div className="grid padding-top-3">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <address>
-                  <h4>Compass Glass - George</h4>
+                  <h3>Compass Glass - George</h3>
                   <address>
                     120 Fichat Street, George Industrial, George 6536
                   </address>

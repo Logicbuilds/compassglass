@@ -28,12 +28,15 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
           <div className="grid-item grid-item-tablet-6 flex justify-content-end">
             <div className="icon-group">
               <a href="/">
+                <span className="sr-only">Compass Glass Facebook</span>
                 <IconFacebookSVG />
               </a>
               <a href="/">
+                <span className="sr-only">Compass Glass Twitter</span>
                 <IconTwitterSVG />
               </a>
               <a href="/">
+                <span className="sr-only">Compass Glass LinkedIn</span>
                 <IconLinkedInSVG />
               </a>
             </div>
