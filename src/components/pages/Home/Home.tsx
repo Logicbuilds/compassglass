@@ -37,7 +37,7 @@ export const Home: React.FC = () => {
                 exceeding best expectations and at competitive market rates!
               </p>
               <Button redirect="/about" buttonClass="primary">
-                Learn more
+                How We Do It
               </Button>
             </div>
           </div>
@@ -66,7 +66,7 @@ export const Home: React.FC = () => {
                   We offer pure, customer-first care, as we put you first when
                   it comes to service, sales and safety.
                 </p>
-                <Button redirect="/about">Learn more</Button>
+                <Button redirect="/about">Read About Compass Glass</Button>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export const Home: React.FC = () => {
                   durability and transparency and is an essential component of
                   civilised life as we know it in the modern world.
                 </p>
-                <Button redirect="/technical">Learn more</Button>
+                <Button redirect="/technical">View Benefits Of Glass</Button>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
                 <img

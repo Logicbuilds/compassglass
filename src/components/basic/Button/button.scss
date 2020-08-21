@@ -3,12 +3,11 @@
   background: $pigeonpost;
   color: #fff;
   @include font-size(22px);
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   min-width: 160px;
-  max-width: 160px;
   min-height: 50px;
   line-height: $line-height-default;
   @include transition(all 0.1s linear);
@@ -16,6 +15,7 @@
   border-radius: 0;
   margin: 0 auto;
   margin-bottom: 4rem;
+  padding: 0.75rem 1rem;
 
   @include breakpoint($laptop) {
     margin: 0;
