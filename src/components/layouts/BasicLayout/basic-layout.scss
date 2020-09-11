@@ -176,6 +176,10 @@
     @include breakpoint($laptop) {
       max-width: 100%;
     }
+
+    &.map {
+      box-shadow: $box-shadow-map;
+    }
   }
 
   h2,

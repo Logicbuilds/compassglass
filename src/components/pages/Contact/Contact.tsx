@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import { camelCase } from 'change-case';
+// import { camelCase } from 'change-case';
 import { useForm } from 'react-hook-form';
 
 import { CONTACT_CONFIG } from 'application/config';
-import { Input, MapFrame } from 'components/common';
-import contactData from 'assets/content/pages/contact.json';
+import { Input } from 'components/common';
+// import contactData from 'assets/content/pages/contact.json';
 // Images
 
 import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
 import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
 import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
+
+import imageGoogleMapCapeTown from 'assets/images/Compass-Glass-Cape-Town-Google-Map.png';
+import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
 
 export const Contact: React.FC = (props) => {
   const [isLoading, setLoading] = useState(false);
@@ -33,7 +36,7 @@ export const Contact: React.FC = (props) => {
   };
 
   if (!window.location.pathname.includes('contact')) return null;
-  const { content } = contactData;
+  // const { content } = contactData;
   return (
     <div className="section">
       <div className="page container">
@@ -103,39 +106,95 @@ export const Contact: React.FC = (props) => {
 
               <div className="grid-item grid-item-12 grid-item-laptop-7">
                 {/* Compass Glass - Cape Town */}
-                {content.map((branch) => (
-                  <div key={branch.phone} className="grid grid-no-wrap">
-                    <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
+                <div className="grid grid-no-wrap">
+                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
+                    <address>
+                      <h5>Compass Glass - Cape Town</h5>
                       <address>
-                        <h5>Compass Glass - {branch.title}</h5>
-                        <address>{branch.address}</address>
-                        <span>
-                          <a href={`mailto:${branch.phone}`}>
-                            <IconPhoneSVG /> {branch.phone}
-                          </a>
-                        </span>
-                        <span>
-                          <a href="mailto:sales@compassglass.co.za">
-                            <IconEmailSVG /> {branch.email}
-                          </a>
-                        </span>
+                        Unit A6, Brackenrite Business Park, Kruis Road,
+                        Brackenfell, Cape Town 7560
                       </address>
-                      <p>
-                        <a
-                          href={branch.directions}
-                          className="text-decoration-none link-with-icon"
-                        >
-                          <IconExternalSVG /> Get directions
+                      <span>
+                        <a href="mailto:+27219817785">
+                          <IconPhoneSVG /> (021) 981 7785
                         </a>
-                      </p>
-                    </div>
-                    <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                      <MapFrame
-                        city={camelCase(branch.title) as 'capeTown' | 'george'}
-                      />
-                    </div>
+                      </span>
+                      <span>
+                        <a href="mailto:sales@compassglass.co.za">
+                          <IconEmailSVG /> sales@compassglass.co.za
+                        </a>
+                      </span>
+                    </address>
+                    <p>
+                      <a
+                        href="https://maps.google.com/maps?ll=-33.877852,18.698147&z=16&t=m&hl=en&gl=ZA&mapclient=embed&cid=11283376801564811414"
+                        className="text-decoration-none link-with-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IconExternalSVG /> Get directions
+                      </a>
+                    </p>
                   </div>
-                ))}
+                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
+                    <a
+                      href="https://maps.google.com/maps?ll=-33.877852,18.698147&z=16&t=m&hl=en&gl=ZA&mapclient=embed&cid=11283376801564811414"
+                      className="text-decoration-none link-with-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={imageGoogleMapCapeTown}
+                        className="img-responsive map"
+                        alt="Google Map Cape Town"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div className="grid grid-no-wrap">
+                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
+                    <address>
+                      <h5>Compass Glass - George</h5>
+                      <address>
+                        120 Fichat Street, George Industrial, George 6536
+                      </address>
+                      <span>
+                        <a href="mailto:+27219817785">
+                          <IconPhoneSVG /> (044) 873 5135
+                        </a>
+                      </span>
+                      <span>
+                        <a href="mailto:admingeorge@compassglass.co.za">
+                          <IconEmailSVG /> admingeorge@compassglass.co.za
+                        </a>
+                      </span>
+                    </address>
+                    <p>
+                      <a
+                        href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
+                        className="text-decoration-none link-with-icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <IconExternalSVG /> Get directions
+                      </a>
+                    </p>
+                  </div>
+                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
+                    <a
+                      href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
+                      className="text-decoration-none link-with-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={imageGoogleMapGeorge}
+                        className="img-responsive map"
+                        alt="Google Map George"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'components/basic';
-import { MapFrame } from 'components/common';
+// import { MapFrame } from 'components/common';
 
 // Images
 import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
@@ -10,6 +10,10 @@ import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.s
 
 import imageWeKnowGlass from 'assets/images/Compass-Glass-We-Know-Glass.jpg';
 import imageGlassBenefits from 'assets/images/Compass-Glass-Glass-Benefits.jpg';
+
+import imageGoogleMapCapeTown from 'assets/images/Compass-Glass-Cape-Town-Google-Map.png';
+import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
+
 // import certificationLogoSAGGA from 'assets/images/logo-certification-sagga.png';
 // import certificationLogoGGF from 'assets/images/logo-certification-ggf.png';
 // import certificationLogoSABS from 'assets/images/logo-certification-sabs.png';
@@ -114,13 +118,29 @@ export const Home: React.FC = () => {
                   </span>
                 </address>
                 <p>
-                  <a href="/" className="text-decoration-none link-with-icon">
+                  <a
+                    href="https://maps.google.com/maps?ll=-33.877852,18.698147&z=16&t=m&hl=en&gl=ZA&mapclient=embed&cid=11283376801564811414"
+                    className="text-decoration-none link-with-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IconExternalSVG /> Get directions
                   </a>
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <MapFrame city="capeTown" />
+                <a
+                  href="https://maps.google.com/maps?ll=-33.877852,18.698147&z=16&t=m&hl=en&gl=ZA&mapclient=embed&cid=11283376801564811414"
+                  className="text-decoration-none link-with-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={imageGoogleMapCapeTown}
+                    className="img-responsive map"
+                    alt="Google Map Cape Town"
+                  />
+                </a>
               </div>
             </div>
 
@@ -144,13 +164,29 @@ export const Home: React.FC = () => {
                 </address>
 
                 <p>
-                  <a href="/" className="text-decoration-none link-with-icon">
+                  <a
+                    href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
+                    className="text-decoration-none link-with-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IconExternalSVG /> Get directions
                   </a>
                 </p>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <MapFrame city="george" />
+                <a
+                  href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
+                  className="text-decoration-none link-with-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={imageGoogleMapGeorge}
+                    className="img-responsive map"
+                    alt="Google Map George"
+                  />
+                </a>
               </div>
             </div>
           </div>
