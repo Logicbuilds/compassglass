@@ -18,11 +18,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://compassglass.co.za/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "url": "https://test.compassglass.co.za/",
+  "url": "https://compassglass.co.za/",
   "lang": "",
   "screenshots": [],
   "orientation": "portrait"
