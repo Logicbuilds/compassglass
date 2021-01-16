@@ -110,6 +110,12 @@ iframe {
 .icon-group {
   display: flex;
   justify-content: space-between;
+
+  svg {
+    fill: #6d9bbf;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 // Background Video
