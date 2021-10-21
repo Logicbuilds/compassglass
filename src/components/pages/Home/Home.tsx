@@ -12,7 +12,7 @@ import imageWeKnowGlass from 'assets/images/Compass-Glass-We-Know-Glass.jpg';
 import imageGlassBenefits from 'assets/images/Compass-Glass-Glass-Benefits.jpg';
 
 import imageGoogleMapCapeTown from 'assets/images/Compass-Glass-Cape-Town-Google-Map.png';
-import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
+// import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
 
 // import certificationLogoSAGGA from 'assets/images/logo-certification-sagga.png';
 // import certificationLogoGGF from 'assets/images/logo-certification-ggf.png';
@@ -148,46 +148,19 @@ export const Home: React.FC = () => {
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-6">
                 <address>
                   <h3>Compass Glass - George</h3>
-                  <address>
-                    120 Fichat Street, George Industrial, George 6536
-                  </address>
                   <span>
-                    <a href="mailto:+270448714321">
-                      <IconPhoneSVG /> (044) 873 5135
+                    <a href="mailto:+27219817785">
+                      <IconPhoneSVG /> (021) 981 7785
                     </a>
                   </span>
                   <span>
-                    <a href="mailto:admingeorge@compassglass.co.za">
-                      <IconEmailSVG /> admingeorge@compassglass.co.za
+                    <a href="mailto:sales@compassglass.co.za">
+                      <IconEmailSVG /> sales@compassglass.co.za
                     </a>
                   </span>
                 </address>
-
-                <p>
-                  <a
-                    href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
-                    className="text-decoration-none link-with-icon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <IconExternalSVG /> Get directions
-                  </a>
-                </p>
               </div>
-              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <a
-                  href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
-                  className="text-decoration-none link-with-icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={imageGoogleMapGeorge}
-                    className="img-responsive map"
-                    alt="Google Map George"
-                  />
-                </a>
-              </div>
+              <div className="grid-item grid-item-tablet-6 grid-item-laptop-4"></div>
             </div>
           </div>
           {/* Card */}
