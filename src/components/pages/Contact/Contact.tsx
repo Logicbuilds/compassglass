@@ -155,45 +155,19 @@ export const Contact: React.FC = (props) => {
                   <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
                     <address>
                       <h5>Compass Glass - George</h5>
-                      <address>
-                        120 Fichat Street, George Industrial, George 6536
-                      </address>
                       <span>
                         <a href="mailto:+27219817785">
-                          <IconPhoneSVG /> (044) 873 5135
+                          <IconPhoneSVG /> (021) 981 7785
                         </a>
                       </span>
                       <span>
-                        <a href="mailto:admingeorge@compassglass.co.za">
-                          <IconEmailSVG /> admingeorge@compassglass.co.za
+                        <a href="mailto:sales@compassglass.co.za">
+                          <IconEmailSVG /> sales@compassglass.co.za
                         </a>
                       </span>
                     </address>
-                    <p>
-                      <a
-                        href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
-                        className="text-decoration-none link-with-icon"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <IconExternalSVG /> Get directions
-                      </a>
-                    </p>
                   </div>
-                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                    <a
-                      href="https://www.google.com/maps?ll=-33.976607,22.467887&z=16&t=m&hl=en&gl=ZA&mapclient=embed&q=120+Fichat+St+George+Industria+George+6536"
-                      className="text-decoration-none link-with-icon"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={imageGoogleMapGeorge}
-                        className="img-responsive map"
-                        alt="Google Map George"
-                      />
-                    </a>
-                  </div>
+                  <div className="grid-item grid-item-tablet-6 grid-item-laptop-4"></div>
                 </div>
               </div>
             </div>
