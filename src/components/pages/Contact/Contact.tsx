@@ -155,6 +155,7 @@ export const Contact: React.FC = (props) => {
                   <div className="grid-item grid-item-tablet-6 grid-item-laptop-6 grid-item-offset-left-1">
                     <address>
                       <h5>Compass Glass - George</h5>
+                      <p></p>
                       <span>
                         <a href="mailto:+27219817785">
                           <IconPhoneSVG /> (021) 981 7785
