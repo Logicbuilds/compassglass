@@ -14,7 +14,7 @@ import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
 import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
 
 import imageGoogleMapCapeTown from 'assets/images/Compass-Glass-Cape-Town-Google-Map.png';
-import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
+// import imageGoogleMapGeorge from 'assets/images/Compass-Glass-George-Google-Map.png';
 
 export const Contact: React.FC = (props) => {
   const [isLoading, setLoading] = useState(false);
