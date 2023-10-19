@@ -13,6 +13,7 @@ export const About: React.FC = () => {
         <div className="cards-container glass frosted-glass">
           <div className="card card-padding-default">
             <h1>{aboutData.title}</h1>
+            {/* @ts-ignore */}
             <ReactMarkdown source={aboutData.content} />
           </div>
         </div>

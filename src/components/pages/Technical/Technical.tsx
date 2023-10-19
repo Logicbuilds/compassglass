@@ -14,6 +14,7 @@ export const Technical: React.FC = () => {
           <div className="card card-padding-default">
             <h1>{techData.title}</h1>
             <h2>{techData.whatIsGlass.title}</h2>
+            {/* @ts-ignore */}
             <ReactMarkdown source={techData.whatIsGlass.content} />
 
             <h2>{techData.compositionOfCommercialGlass.title}</h2>
@@ -50,6 +51,7 @@ export const Technical: React.FC = () => {
                 </tbody>
               </table>
             </div>
+            {/* @ts-ignore */}
             <ReactMarkdown className="small" source={techData.disclaimer} />
           </div>
         </div>

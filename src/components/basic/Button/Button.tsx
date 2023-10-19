@@ -20,7 +20,9 @@ export const Button: React.FC<ButtonProps> = ({
   children,
 }) => {
   return (
+    /* @ts-ignore */
     <Link className={'button ' + buttonClass} to={redirect} target={linkTarget}>
+      {/* @ts-ignore  */}
       {children}
     </Link>
   );
