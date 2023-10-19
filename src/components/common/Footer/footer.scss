@@ -32,6 +32,10 @@
       margin: 0;
       @include font-size(18px);
     }
+
+    a {
+      color: #d3dfe9;
+    }
   }
 
   .icon-group {
