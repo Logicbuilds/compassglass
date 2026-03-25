@@ -25,6 +25,11 @@ export const About: React.FC = () => {
                 <div className="tab-content">
                   <ul>
                     <li>
+                      <a href="/static/media/PRIVACY-STATEMENT.pdf">
+                        PRIVACY-STATEMENT.pdf
+                      </a>
+                    </li>
+                    <li>
                       <a href="/static/media/CG-Form02-RequestforAccesstoRecord.pdf">
                         CG-Form02-RequestforAccesstoRecord.pdf
                       </a>
@@ -39,7 +44,7 @@ export const About: React.FC = () => {
                         CG-PAIAManual.pdf
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/static/media/CG-PRIVACYSTATEMENT.pdf">
                         CG-PRIVACYSTATEMENT.pdf
                       </a>
@@ -48,7 +53,7 @@ export const About: React.FC = () => {
                       <a href="/static/media/CG-T5-PRIVACYSTATEMENT.pdf">
                         CG-T5-PRIVACYSTATEMENT.pdf
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="/static/media/CG-T5-PaiaManual.pdf">
                         CG-T5-PaiaManual.pdf
