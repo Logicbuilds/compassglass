@@ -16,6 +16,7 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
         headMeta.title
       )}`}
     >
+      {/* @ts-ignore */}
       <Helmet>
         <title>{headMeta.title}</title>
         {headMeta.meta.map((metaItem) => (

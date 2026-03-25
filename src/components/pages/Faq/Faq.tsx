@@ -24,6 +24,7 @@ export const Faq: React.FC = () => {
                       {faq.question}
                     </label>
                     <div className="tab-content">
+                      {/* @ts-ignore */}
                       <ReactMarkdown source={faq.answer} />
                     </div>
                   </div>
