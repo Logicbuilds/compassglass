@@ -1,1 +1,27 @@
-.about{}
+.about {
+  &.tabs {
+    margin-top: 30px;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab {
+    margin-bottom: 0;
+  }
+  ul {
+    list-style: square;
+    padding: 0 0 0 10px;
+    margin: 0;
+    li {
+      padding: 0 0 1rem 0;
+      text-align: left;
+      line-height: 1.4;
+      word-wrap: break-word;
+      &::marker {
+        color: #000;
+      }
+    }
+  }
+}

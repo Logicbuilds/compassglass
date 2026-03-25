@@ -19,13 +19,13 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
     <div className="section footer-section">
       <div className="footer container">
         <div className="grid grid-items-have-gap align-items-center">
-          <div className="grid-item grid-item-tablet-6">
+          <div className="grid-item grid-item-tablet-8">
             <p>
               &copy; Copyright Compass Glass {new Date().getFullYear()}. All
-              right reserved. <a href="/faq#">Policies</a>
+              right reserved. <a href="/about">Compass Glass Policies</a>
             </p>
           </div>
-          <div className="grid-item grid-item-tablet-6 flex justify-content-end">
+          <div className="grid-item grid-item-tablet-4 flex justify-content-end">
             <div className="icon-group">
               <a
                 target="_blank"
