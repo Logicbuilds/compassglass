@@ -24,9 +24,9 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
         ))}
       </Helmet>
       {/* @ts-ignore */}
-      <Headroom>
+      {/* <Headroom> */}
         <Header />
-      </Headroom>
+      {/* </Headroom> */}
       <div className="animated fadeIn slower">
         {children}
         <Footer />
