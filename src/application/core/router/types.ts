@@ -1,7 +1,9 @@
-import { FC, LazyExoticComponent } from 'react';
+import { FC, LazyExoticComponent, ReactNode } from 'react';
 import { RouteProps } from 'react-router-dom';
 
-export type LayoutProps = Pick<RouteConfig, 'headMeta'>;
+export type LayoutProps = Pick<RouteConfig, 'headMeta'> & {
+  children: ReactNode;
+};
 
 export interface RouteConfig {
   name: string;
@@ -31,7 +33,7 @@ export interface LayoutDefinition {
   component: LazyExoticComponent<FC<LayoutProps>>;
 }
 
-export interface RouteDefinition extends RouteProps {
+export type RouteDefinition = RouteProps & {
   path: string;
   component: LazyExoticComponent<FC>;
-}
+};

@@ -23,6 +23,7 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
           <meta key={metaItem.name} {...metaItem} />
         ))}
       </Helmet>
+      {/* @ts-ignore */}
       <Headroom>
         <Header />
       </Headroom>

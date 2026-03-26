@@ -22,7 +22,7 @@ async function wireupComponents() {
           component.isDirectory() &&
           !componentsToExclude.includes(component.name)
         ) {
-          const pathFragments = groupPath.split('/');
+          const pathFragments = groupPath.split(path.sep);
           const srcIndex = pathFragments.findIndex(
             (pathItem) => pathItem === 'src'
           );
@@ -30,7 +30,8 @@ async function wireupComponents() {
             ...pathFragments.slice(srcIndex + 1),
             component.name
           );
-          exportItems.push(contentTemplate.replace(pathMatcher, contextPath));
+          // Normalize path to use forward slashes for imports
+          exportItems.push(contentTemplate.replace(pathMatcher, contextPath.replace(/\\/g, '/')));
         }
       }
 
