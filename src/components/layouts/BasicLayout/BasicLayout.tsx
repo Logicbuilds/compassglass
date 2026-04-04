@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { LayoutProps } from 'application/models';
 import { Header, Footer } from 'components/common';
-import Headroom from 'react-headroom';
+// import Headroom from 'react-headroom';
 import { paramCase } from 'change-case';
 /**
  * Basic page layout component
@@ -25,7 +25,7 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
       </Helmet>
       {/* @ts-ignore */}
       {/* <Headroom> */}
-        <Header />
+      <Header />
       {/* </Headroom> */}
       <div className="animated fadeIn slower">
         {children}
