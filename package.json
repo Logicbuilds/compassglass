@@ -1,6 +1,6 @@
 {
-  "name": "undefyned-starter",
-  "version": "0.0.1",
+  "name": "compass-glass",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@types/react-headroom": "^2.2.1",
@@ -36,8 +36,8 @@
     "plop": "yarn plop:definitions && plop && yarn wireup",
     "plop:definitions": "ts-node ./scripts/plop-definitions.ts",
     "clean:definitions": "rimraf ./plop-templates/configs.generated.json",
-    "start": "yarn wireup && yarn copy:content && react-scripts start",
-    "build": "yarn wireup && yarn copy:content && react-scripts build",
+    "start": "npm run wireup && npm run copy:content && react-scripts start",
+    "build": "npm run wireup && npm run copy:content && react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {
