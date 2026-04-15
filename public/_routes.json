@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": ["/static/*", "/api/*"],
+  "rules": [
+    {
+      "type": "rewrite",
+      "pattern": "^(?!.*\\.(js|css|svg|png|jpg|jpeg|gif|webp|json|xml|txt|ico|woff2|woff|ttf|eot)$).*$",
+      "rewrite": "/index.html"
+    }
+  ]
+}
