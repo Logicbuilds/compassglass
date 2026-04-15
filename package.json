@@ -1,7 +1,7 @@
 {
   "name": "compass-glass",
   "version": "2.0.0",
-  "homepage": "/",
+  "homepage": "https://compassglass.co.za",
   "private": true,
   "dependencies": {
     "@types/react-headroom": "^2.2.1",
