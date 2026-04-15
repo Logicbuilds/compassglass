@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 // Images
 
@@ -26,7 +27,12 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
             </p>
             <div className="flex">
               <p>
-                <a href="/about">Compass Glass Policies</a>.{' '}
+                <NavLink
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                  to="/about"
+                >
+                  Compass Glass Policies
+                </NavLink>
                 <a href="/terms">Terms and Conditions</a>
               </p>
             </div>
