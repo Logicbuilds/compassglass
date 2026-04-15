@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
 export interface ButtonProps {
@@ -7,6 +7,7 @@ export interface ButtonProps {
   redirect: string;
   buttonClass?: string;
   linkTarget?: string;
+  children: ReactNode;
 }
 
 /**

@@ -36,6 +36,7 @@
     a {
       color: #d3dfe9;
       text-decoration: none;
+       @include font-size(12px);
       &:hover {
         text-decoration: underline;
       }

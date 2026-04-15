@@ -6,3 +6,4 @@ export * from 'components/pages/Faq/route';
 export * from 'components/pages/Home/route';
 export * from 'components/pages/NotFound/route';
 export * from 'components/pages/Technical/route';
+export * from 'components/pages/Terms/route';

@@ -26,19 +26,19 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
             </Link>
           </h1>
           <nav>
-            <NavLink activeClassName="active" to="/about">
+            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/about">
               About
             </NavLink>
-            <NavLink activeClassName="active" to="/faq">
+            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/faq">
               FAQ
             </NavLink>
-            <NavLink activeClassName="active" to="/technical">
+            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/technical">
               Technical
             </NavLink>
-            <NavLink activeClassName="active" to="/blog">
+            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/blog">
               Blog
             </NavLink>
-            <NavLink activeClassName="active" to="/contact">
+            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/contact">
               Contact
             </NavLink>
           </nav>

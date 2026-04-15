@@ -22,8 +22,14 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
           <div className="grid-item grid-item-tablet-8">
             <p>
               &copy; Copyright Compass Glass {new Date().getFullYear()}. All
-              right reserved. <a href="/about">Compass Glass Policies</a>
+              right reserved.
             </p>
+            <div className="flex">
+              <p>
+                <a href="/about">Compass Glass Policies</a>.{' '}
+                <a href="/terms">Terms and Conditions</a>
+              </p>
+            </div>
           </div>
           <div className="grid-item grid-item-tablet-4 flex justify-content-end">
             <div className="icon-group">

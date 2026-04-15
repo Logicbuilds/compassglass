@@ -116,7 +116,8 @@
 // Headroom
 
 .headroom {
-  @include transition(all 0.25s);
+  @include transition(all 0.45s);
+  // position: absolute !important;
 }
 
 .compass-glass-south-africa {

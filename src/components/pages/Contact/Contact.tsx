@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 // import { camelCase } from 'change-case';
 import { useForm } from 'react-hook-form';
@@ -21,7 +21,7 @@ export const Contact: React.FC = (props) => {
   const [mailSent, setMailSent] = useState(false);
   const [hasError, setHasError] = useState(false);
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async (data: any) => {
     try {
