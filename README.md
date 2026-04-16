@@ -8,23 +8,23 @@ Compass Glass project modernized with React 18 with Node v25 compatibility.
 
 Dependencies:
 
-✅ React: 16.13.1 → 18.2.0
-✅ React DOM: 16.13.1 → 18.2.0
-✅ react-scripts: 3.4.1 → 5.0.1 (webpack 4 → webpack 5)
-✅ node-sass → sass (dart-sass)
-✅ React Router: 5.x → 6.18.0
-✅ react-hook-form: 6.x → 7.48.0
-✅ TypeScript: 4.6.3 → 5.3.3
-✅ All testing/dev dependencies updated
+- ✅ React: 16.13.1 → 18.2.0
+- ✅ React DOM: 16.13.1 → 18.2.0
+- ✅ react-scripts: 3.4.1 → 5.0.1 (webpack 4 → webpack 5)
+- ✅ node-sass → sass (dart-sass)
+- ✅ React Router: 5.x → 6.18.0
+- ✅ react-hook-form: 6.x → 7.48.0
+- ✅ TypeScript: 4.6.3 → 5.3.3
+- ✅ All testing/dev dependencies updated
 
 Code Changes:
 
-✅ React 18 rendering API (ReactDOM.createRoot())
-✅ React Router v6 (Routes vs Switch, element prop, className callbacks)
-✅ react-hook-form v7 API (formState.errors)
-✅ EmailJS SDK migration (emailjs-com → @emailjs/browser)
-✅ Component TypeScript definitions for children props
-✅ Windows path handling in build scripts (PowerShell fix)
+- ✅ React 18 rendering API (ReactDOM.createRoot())
+- ✅ React Router v6 (Routes vs Switch, element prop, className callbacks)
+- ✅ react-hook-form v7 API (formState.errors)
+- ✅ EmailJS SDK migration (emailjs-com → @emailjs/browser)
+- ✅ Component TypeScript definitions for children props
+- ✅ Windows path handling in build scripts (PowerShell fix)
 
 ## Available Scripts
 
