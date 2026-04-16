@@ -1,0 +1,65 @@
+// Colours
+
+$valhalla: #231d5e;
+$congressblue: #00458e;
+$mineshaft: #343434;
+$deepcerulean: #006eb1;
+$aliceblue: #fafdff;
+$linkwater: #d4e2f5;
+$wedgewood: #5579a4;
+$pigeonpost: #417ba9;
+$nepal: #8ba0ba;
+$fuzzy: #c05365;
+$blacksqueeze: #edf5f9;
+$glacier: #80adc3;
+
+$card-background-primary: rgba(250, 253, 255, 0.92);
+$card-background-secondary: rgba(255, 255, 255, 0.92);
+
+// Box Shadows
+
+$box-shadow-default: 0 0px 4px 2px $blacksqueeze;
+$box-shadow-header: 0 0 5px $linkwater;
+$box-shadow-cards-container: -80px -60px 70px rgba(185, 211, 230, 0.2);
+$box-shadow-image: 0 10px 10px rgba(0, 0, 0, 0.028),
+  0 15px 20px rgb(212, 228, 242), 0 100px 65px rgb(247, 252, 255);
+$box-shadow-forms: 0px 1px 0 0 $blacksqueeze;
+$box-shadow-map: 2px 2px 4px grayscale($linkwater);
+
+// Fonts
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol' !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-primary: 'Open Sans', $font-family-base;
+
+// Font weights
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Lineheight
+
+$line-height-default: 1.5;
+$line-height-1-8: 1.8;
+$line-height-2: 2;
+
+// Spacing
+
+$spacing: 1rem;
+
+// Breakpoints
+
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1235px;
+$huge: 1440px;
+
+// Container Width
+
+$section: 100%;
+$container: $desktop;

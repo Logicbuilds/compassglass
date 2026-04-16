@@ -3,11 +3,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 // Images
 
 // import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
-import { ReactComponent as CompassGlassLogoTextSVG } from 'assets/images/Compass-Glass-Logo-Text.svg';
+// import { ReactComponent as CompassGlassLogoTextSVG } from 'assets/images/Compass-Glass-Logo-Text.svg';
 
 export interface HeaderProps {
   /** Example Header property. */
@@ -33,7 +34,12 @@ export const Header: React.FC<HeaderProps> = ({ ...props }) => {
           <h1 className="logo">
             <Link href="/">
               <span className="sr-only">Compass Glass</span>
-              <CompassGlassLogoTextSVG />
+              <Image
+                src="/images/Compass-Glass-Logo-Text.svg"
+                alt="Compass Glass Logo"
+                width={100}
+                height={100}
+              />
             </Link>
           </h1>
           <nav>

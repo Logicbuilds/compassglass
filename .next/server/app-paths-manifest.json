@@ -1,10 +1,4 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/(routes)/contact/page": "app/(routes)/contact/page.js",
-  "/(routes)/about/page": "app/(routes)/about/page.js",
-  "/(routes)/blog/page": "app/(routes)/blog/page.js",
-  "/(routes)/faq/page": "app/(routes)/faq/page.js",
-  "/(routes)/page": "app/(routes)/page.js",
-  "/(routes)/technical/page": "app/(routes)/technical/page.js",
-  "/(routes)/terms/page": "app/(routes)/terms/page.js"
+  "/(routes)/page": "app/(routes)/page.js"
 }

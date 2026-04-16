@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button } from 'components/basic';
+import Image from 'next/image';
 // import { MapFrame } from 'components/common';
 
 // Images
-import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
-import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
-import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
-import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
+// import { ReactComponent as CompassGlassLogoSVG } from 'assets/images/Compass-Glass-Logo.svg';
+// import { ReactComponent as IconPhoneSVG } from 'assets/images/icon-phone.svg';
+// import { ReactComponent as IconEmailSVG } from 'assets/images/icon-email.svg';
+// import { ReactComponent as IconExternalSVG } from 'assets/images/icon-external.svg';
 
 import imageWeKnowGlass from 'assets/images/Compass-Glass-We-Know-Glass.jpg';
 import imageGlassBenefits from 'assets/images/Compass-Glass-Glass-Benefits.jpg';
@@ -30,7 +31,12 @@ export const Home: React.FC = () => {
           <div className="grid">
             <div className="grid-item grid-item-laptop-3">
               <h1 className="logo">
-                <CompassGlassLogoSVG />
+                <Image
+                  src="/images/Compass-Glass-Logo-Text.svg"
+                  alt="Compass Glass Logo"
+                  width={100}
+                  height={100}
+                />
               </h1>
             </div>
             <div className="grid-item hero-text grid-item-laptop-9">
@@ -60,7 +66,11 @@ export const Home: React.FC = () => {
           <div className="card card-padding-default">
             <div className="grid">
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <img src={imageWeKnowGlass} className="img-responsive" alt="" />
+                <Image
+                  src={imageWeKnowGlass}
+                  className="img-responsive"
+                  alt=""
+                />
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-5 grid-item-offset-left-1">
                 <h2>About Compass Glass</h2>
@@ -87,7 +97,7 @@ export const Home: React.FC = () => {
                 <Button redirect="/technical">View Benefits Of Glass</Button>
               </div>
               <div className="grid-item grid-item-tablet-6 grid-item-laptop-4">
-                <img
+                <Image
                   src={imageGlassBenefits}
                   className="img-responsive"
                   alt=""
@@ -108,12 +118,24 @@ export const Home: React.FC = () => {
                   </address>
                   <span>
                     <a href="mailto:+27219817785">
-                      <IconPhoneSVG /> (021) 981 7785
+                      <Image
+                        src="/images/icon-phone.svg"
+                        alt="Phone icon"
+                        width={24}
+                        height={24}
+                      />{' '}
+                      (021) 981 7785
                     </a>
                   </span>
                   <span>
                     <a href="mailto:sales@compassglass.co.za">
-                      <IconEmailSVG /> sales@compassglass.co.za
+                      <Image
+                        src="/images/icon-email.svg"
+                        alt="Email icon"
+                        width={24}
+                        height={24}
+                      />{' '}
+                      sales@compassglass.co.za
                     </a>
                   </span>
                 </address>
@@ -124,7 +146,13 @@ export const Home: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <IconExternalSVG /> Get directions
+                    <Image
+                      src="/images/icon-external.svg"
+                      alt="Email icon"
+                      width={24}
+                      height={24}
+                    />{' '}
+                    Get directions
                   </a>
                 </p>
               </div>
@@ -135,7 +163,7 @@ export const Home: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
+                  <Image
                     src={imageGoogleMapCapeTown}
                     className="img-responsive map"
                     alt="Google Map Cape Town"
@@ -150,12 +178,24 @@ export const Home: React.FC = () => {
                   <h3>Compass Glass - George</h3>
                   <span>
                     <a href="mailto:+27219817785">
-                      <IconPhoneSVG /> (021) 981 7785
+                      <Image
+                        src="/images/icon-phone.svg"
+                        alt="Phone icon"
+                        width={24}
+                        height={24}
+                      />{' '}
+                      (021) 981 7785
                     </a>
                   </span>
                   <span>
                     <a href="mailto:sales@compassglass.co.za">
-                      <IconEmailSVG /> sales@compassglass.co.za
+                      <Image
+                        src="/images/icon-email.svg"
+                        alt="Email icon"
+                        width={24}
+                        height={24}
+                      />{' '}
+                      sales@compassglass.co.za
                     </a>
                   </span>
                 </address>

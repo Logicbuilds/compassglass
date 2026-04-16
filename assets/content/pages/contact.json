@@ -1,0 +1,18 @@
+{
+  "content": [
+    {
+      "title": "Cape Town",
+      "address": "Unit A6, Brackenrite Business Park, Kruis Road, Brackenfell, Cape Town 7560",
+      "phone": "(021) 981 7785",
+      "email": "sales@compassglass.co.za",
+      "directions": "https://maps.google.com/maps?ll=-33.877852,18.698147&z=15&t=m&hl=en&gl=ZA&mapclient=embed&cid=11283376801564811414"
+    },
+    {
+      "title": "George",
+      "address": "120 Fichat Street, George Industrial, George 6536",
+      "phone": "(044) 873 5135",
+      "email": "admingeorge@compassglass.co.za",
+      "directions": "https://test.compassglass.co.za/"
+    }
+  ]
+}

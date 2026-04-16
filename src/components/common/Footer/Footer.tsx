@@ -3,12 +3,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
+import Image from 'next/image';
 // Images
 
-import { ReactComponent as IconFacebookSVG } from 'assets/images/icon-facebook.svg';
-import { ReactComponent as IconInstagramSVG } from 'assets/images/icon-instagram.svg';
-import { ReactComponent as IconLinkedInSVG } from 'assets/images/icon-linkedin.svg';
+// import { ReactComponent as IconFacebookSVG } from 'assets/images/icon-facebook.svg';
+// import { ReactComponent as IconInstagramSVG } from 'assets/images/icon-instagram.svg';
+// import { ReactComponent as IconLinkedInSVG } from 'assets/images/icon-linkedin.svg';
 
 export interface FooterProps {
   /** Example Footer property. */
@@ -62,7 +62,12 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
                 href="https://www.facebook.com/Compass-Glass-104892421492307/"
               >
                 <span className="sr-only">Compass Glass Facebook</span>
-                <IconFacebookSVG />
+                <Image
+                  src="/images/icon-facebook.svg"
+                  alt="Compass Glass Facebook"
+                  width={100}
+                  height={100}
+                />
               </a>
               <a
                 target="_blank"
@@ -70,15 +75,25 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
                 href="https://www.linkedin.com/company/compass-glass-ct"
               >
                 <span className="sr-only">Compass Glass LinkedIn</span>
-                <IconLinkedInSVG />
+                <Image
+                  src="/images/icon-linkedin.svg"
+                  alt="Compass Glass LinkedIn"
+                  width={100}
+                  height={100}
+                />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://instagram.com/compassglassct?igshid=aj5btp4lfu7p"
               >
-                <span className="sr-only">Compass Glass Twitter</span>
-                <IconInstagramSVG />
+                <span className="sr-only">Compass Glass Instagram</span>
+                <Image
+                  src="/images/icon-instagram.svg"
+                  alt="Compass Glass Instagram"
+                  width={100}
+                  height={100}
+                />
               </a>
             </div>
           </div>
