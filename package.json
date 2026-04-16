@@ -37,8 +37,8 @@
     "plop": "yarn plop:definitions && plop && yarn wireup",
     "plop:definitions": "ts-node ./scripts/plop-definitions.ts",
     "clean:definitions": "rimraf ./plop-templates/configs.generated.json",
-    "start": "npm run wireup && npm run copy:content && react-scripts start",
-    "build": "npm run wireup && npm run copy:content && react-scripts build",
+    "start": "npm run wireup && react-scripts start",
+    "build": "npm run wireup && react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {
