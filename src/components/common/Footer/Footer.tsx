@@ -33,7 +33,13 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
                 >
                   Compass Glass Policies
                 </NavLink>
-                <a href="/terms">Terms and Conditions</a>
+                .
+                <NavLink
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                  to="/terms"
+                >
+                  Terms and Conditions
+                </NavLink>
               </p>
             </div>
           </div>
