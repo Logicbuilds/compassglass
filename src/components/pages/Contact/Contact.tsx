@@ -35,7 +35,6 @@ export const Contact: React.FC = (props) => {
     }
   };
 
-  if (!window.location.pathname.includes('contact')) return null;
   // const { content } = contactData;
   return (
     <div className="section">

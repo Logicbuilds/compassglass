@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // Images
 
@@ -15,32 +18,46 @@ export interface HeaderProps {
  * Header component
  */
 export const Header: React.FC<HeaderProps> = ({ ...props }) => {
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === '/' && pathname === '/') return true;
+    if (href !== '/' && pathname.startsWith(href)) return true;
+    return false;
+  };
+
   return (
     <div className="header-section">
       <div className="header">
         <div className="flex nav-container container">
           <h1 className="logo">
-            <Link to="/">
+            <Link href="/">
               <span className="sr-only">Compass Glass</span>
               <CompassGlassLogoTextSVG />
             </Link>
           </h1>
           <nav>
-            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/about">
+            <Link className={isActive('/about') ? 'active' : ''} href="/about">
               About
-            </NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/faq">
+            </Link>
+            <Link className={isActive('/faq') ? 'active' : ''} href="/faq">
               FAQ
-            </NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/technical">
+            </Link>
+            <Link
+              className={isActive('/technical') ? 'active' : ''}
+              href="/technical"
+            >
               Technical
-            </NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/blog">
+            </Link>
+            <Link className={isActive('/blog') ? 'active' : ''} href="/blog">
               Blog
-            </NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/contact">
+            </Link>
+            <Link
+              className={isActive('/contact') ? 'active' : ''}
+              href="/contact"
+            >
               Contact
-            </NavLink>
+            </Link>
           </nav>
         </div>
       </div>

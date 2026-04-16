@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export interface ButtonProps {
   /** Example Button property. */
@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     /* @ts-ignore */
-    <Link className={'button ' + buttonClass} to={redirect} target={linkTarget}>
+    <Link className={'button ' + buttonClass} href={redirect} target={linkTarget}>
       {/* @ts-ignore  */}
       {children}
     </Link>

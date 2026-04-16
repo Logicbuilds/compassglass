@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // Images
 
@@ -16,6 +19,14 @@ export interface FooterProps {
  * Footer component
  */
 export const Footer: React.FC<FooterProps> = ({ ...props }) => {
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === '/' && pathname === '/') return true;
+    if (href !== '/' && pathname.startsWith(href)) return true;
+    return false;
+  };
+
   return (
     <div className="section footer-section">
       <div className="footer container">
@@ -27,19 +38,19 @@ export const Footer: React.FC<FooterProps> = ({ ...props }) => {
             </p>
             <div className="flex">
               <p>
-                <NavLink
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                  to="/about"
+                <Link
+                  className={isActive('/about') ? 'active' : ''}
+                  href="/about"
                 >
                   Compass Glass Policies
-                </NavLink>
+                </Link>
                 .
-                <NavLink
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                  to="/terms"
+                <Link
+                  className={isActive('/terms') ? 'active' : ''}
+                  href="/terms"
                 >
                   Terms and Conditions
-                </NavLink>
+                </Link>
               </p>
             </div>
           </div>

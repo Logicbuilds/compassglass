@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async'; // Disabled for Next.js
 import { LayoutProps } from 'application/models';
 import { Header, Footer } from 'components/common';
 // import Headroom from 'react-headroom';
@@ -16,13 +16,14 @@ export const BasicLayout: React.FC<LayoutProps> = ({ children, headMeta }) => {
         headMeta.title
       )}`}
     >
+      {/* Metadata handled by Next.js - react-helmet-async removed */}
       {/* @ts-ignore */}
-      <Helmet>
+      {/* <Helmet>
         <title>{headMeta.title}</title>
         {headMeta.meta.map((metaItem) => (
           <meta key={metaItem.name} {...metaItem} />
         ))}
-      </Helmet>
+      </Helmet> */}
       {/* @ts-ignore */}
       {/* <Headroom> */}
       <Header />
