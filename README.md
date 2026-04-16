@@ -1,6 +1,5 @@
-Compass Glass Website
+# Compass Glass Website
 
----
 
 Compass Glass project modernized with React 18 with Node v25 compatibility.
 
